@@ -49,40 +49,47 @@ namespace Entidades
             return retorno;
         }
 
-        private bool EsBinario(string binario)
+        private static bool EsBinario(string binario)
         {
             bool retorno = true;
 
-            foreach (var item in binario)
+            if (binario == "")
             {
-                if(item != '1' && item != '0') 
+                retorno = false;
+            }
+            else
+            {
+                foreach (var item in binario)
                 {
-                    retorno = false;
+                    if (item != '1' && item != '0')
+                    {
+                        retorno = false;
+                    }
                 }
             }
 
             return retorno;
         }
 
-        public string decimalBinario(double numero) 
+        public static string decimalBinario(double numero) 
         {
             return decimalBinario(numero.ToString());
         }
-        public string decimalBinario(string numeroStr)
+        public static string decimalBinario(string numeroStr)
         {
-            double binario = 0;
-            double numero = double.Parse(numeroStr);
-            const double DIVISOR = 2;
-            double digito = 0;
+            long binario = 0;
 
-            for (double i = numero % DIVISOR, j = 0; numero > 0; numero /= DIVISOR, i = numero % DIVISOR, j++)
+            double numero = double.Parse(numeroStr);
+
+            long descartable = 0;
+
+            for (double i = numero % 2, j = 0; numero > 0; numero /= 2, i = numero % 2, j++)
             {
-                digito = i % DIVISOR;
-                binario += digito * (double)Math.Pow(10, j);
+                descartable = (long)i % 2;
+                binario = binario + descartable * (long)Math.Pow(10, j);
             }
 
             numeroStr = binario.ToString();
-
             if (!EsBinario(numeroStr))
             {
                 numeroStr = "Valor invalido";
@@ -90,7 +97,8 @@ namespace Entidades
 
             return numeroStr;
         }
-        public string binarioDecimal(string numeroStr)
+
+        public static string binarioDecimal(string numeroStr)
         {
             double res=0;
             string retorno;

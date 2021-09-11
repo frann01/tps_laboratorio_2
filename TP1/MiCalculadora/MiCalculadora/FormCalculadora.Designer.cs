@@ -1,7 +1,7 @@
 ﻿
 namespace MiCalculadora
 {
-    partial class Form1
+    partial class FormCalculadora
     {
         /// <summary>
         ///  Required designer variable.
@@ -34,10 +34,10 @@ namespace MiCalculadora
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.comboBoxOperando = new System.Windows.Forms.ComboBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.textBoxNum2 = new System.Windows.Forms.TextBox();
             this.textBoxNum1 = new System.Windows.Forms.TextBox();
+            this.comboBoxOperando = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // button1
@@ -48,7 +48,7 @@ namespace MiCalculadora
             this.button1.TabIndex = 0;
             this.button1.Text = "Convertir a binario";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.buttonBin_Click);
+            this.button1.Click += new System.EventHandler(this.buttonConvertirBin_Click);
             // 
             // button2
             // 
@@ -58,7 +58,7 @@ namespace MiCalculadora
             this.button2.TabIndex = 1;
             this.button2.Text = "Convertir a Decimal";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.buttonDec_Click);
+            this.button2.Click += new System.EventHandler(this.buttonConvertirDec_Click);
             // 
             // button3
             // 
@@ -90,20 +90,6 @@ namespace MiCalculadora
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.buttonCerrar_Click);
             // 
-            // comboBoxOperando
-            // 
-            this.comboBoxOperando.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.comboBoxOperando.FormattingEnabled = true;
-            this.comboBoxOperando.Items.AddRange(new object[] {
-            "+",
-            "-",
-            "*",
-            "/"});
-            this.comboBoxOperando.Location = new System.Drawing.Point(208, 64);
-            this.comboBoxOperando.Name = "comboBoxOperando";
-            this.comboBoxOperando.Size = new System.Drawing.Size(121, 45);
-            this.comboBoxOperando.TabIndex = 5;
-            // 
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
@@ -128,17 +114,33 @@ namespace MiCalculadora
             this.textBoxNum1.Name = "textBoxNum1";
             this.textBoxNum1.Size = new System.Drawing.Size(149, 43);
             this.textBoxNum1.TabIndex = 8;
-            this.textBoxNum1.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // Form1
+            // comboBoxOperando
+            // 
+            this.comboBoxOperando.AllowDrop = true;
+            this.comboBoxOperando.DropDownHeight = 120;
+            this.comboBoxOperando.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxOperando.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.comboBoxOperando.FormattingEnabled = true;
+            this.comboBoxOperando.Items.AddRange(new object[] {
+            '+',
+            "-",
+            "*",
+            "/"});
+            this.comboBoxOperando.Location = new System.Drawing.Point(208, 64);
+            this.comboBoxOperando.Name = "comboBoxOperando";
+            this.comboBoxOperando.Size = new System.Drawing.Size(121, 45);
+            this.comboBoxOperando.TabIndex = 9;
+            // 
+            // FormCalculadora
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(671, 300);
+            this.Controls.Add(this.comboBoxOperando);
             this.Controls.Add(this.textBoxNum1);
             this.Controls.Add(this.textBoxNum2);
             this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.comboBoxOperando);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -147,10 +149,11 @@ namespace MiCalculadora
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Form1";
+            this.Name = "FormCalculadora";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculadora de Francisco Szellner division 2do A";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormCalculadora_FormClosing);
+            this.Load += new System.EventHandler(this.FormCalculadora_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -163,10 +166,10 @@ namespace MiCalculadora
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.ComboBox comboBoxOperando;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.TextBox textBoxNum2;
         private System.Windows.Forms.TextBox textBoxNum1;
+        private System.Windows.Forms.ComboBox comboBoxOperando;
     }
 }
 
