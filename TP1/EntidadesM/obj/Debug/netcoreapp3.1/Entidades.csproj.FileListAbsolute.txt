@@ -1,0 +1,5 @@
+C:\Users\USUARIO\source\repos\Szellner.Francisco\Entidades\obj\Debug\netcoreapp3.1\Entidades.csproj.AssemblyReference.cache
+C:\Users\USUARIO\source\repos\Szellner.Francisco\Entidades\obj\Debug\netcoreapp3.1\Entidades.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USUARIO\source\repos\Szellner.Francisco\Entidades\obj\Debug\netcoreapp3.1\Entidades.AssemblyInfoInputs.cache
+C:\Users\USUARIO\source\repos\Szellner.Francisco\Entidades\obj\Debug\netcoreapp3.1\Entidades.AssemblyInfo.cs
+C:\Users\USUARIO\source\repos\Szellner.Francisco\Entidades\obj\Debug\netcoreapp3.1\Entidades.csproj.CoreCompileInputs.cache
