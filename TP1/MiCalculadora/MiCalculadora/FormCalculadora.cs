@@ -24,7 +24,7 @@ namespace MiCalculadora
         }
         private void buttonOperar_Click(object sender, EventArgs e)
         {
-            if(textBoxNum1.Text != null && textBoxNum2.Text != null && comboBoxOperando.Text != null) 
+            if(textBoxNum1.Text != "" && textBoxNum2.Text != "" && comboBoxOperando.Text != "") 
             {
                 Operando num1 = new Operando(textBoxNum1.Text);
                 Operando num2 = new Operando(textBoxNum2.Text);
@@ -36,25 +36,44 @@ namespace MiCalculadora
 
                 display = num1.Numero + " " + operando + " " + num2.Numero + " = " + resultado;
 
-                listBox1.Items.Add(display);
+                lblResultado.Text = resultado.ToString();
+                lstOperaciones.Items.Add(display);
             }
         }
 
         private void buttonConvertirBin_Click(object sender, EventArgs e)
         {
-            
+            if(lblResultado.Text != "")
+            {
+                lblResultado.Text = Operando.decimalBinario(lblResultado.Text);
+            }
             
         }
 
         private void buttonConvertirDec_Click(object sender, EventArgs e)
         {
+            bool bandera = true;
 
+            if (lblResultado.Text != "")
+            {
+                foreach (var item in lblResultado.Text)
+                {
+                    if (item != '1' && item != '0')
+                    {
+                        bandera = false;
+                    }
+                }
+
+                if (bandera == true)
+                {
+                    lblResultado.Text = Operando.binarioDecimal(lblResultado.Text);
+                }
+            }
         }
 
-        public double Operar(Operando num1, Operando num2, char operador) 
+        public static double Operar(Operando num1, Operando num2, char operador) 
         {
-            Calculadora calculadora = new Calculadora();
-            double resultado = calculadora.Operar(num1, num2, operador);
+            double resultado = Calculadora.Operar(num1, num2, operador);
             return resultado;
         }
 
@@ -65,17 +84,14 @@ namespace MiCalculadora
         private void FormCalculadora_Load(object sender, EventArgs e)
         {
             Limpiar();
-            comboBoxOperando.Items.Add('+');
-            comboBoxOperando.Items.Add('-');
-            comboBoxOperando.Items.Add('*');
-            comboBoxOperando.Items.Add('/');
+            lblResultado.Text = "0";
         }
         private void Limpiar() 
         {
-            listBox1.Items.Clear();
-            textBoxNum1.Clear();
-            textBoxNum2.Clear();
-            comboBoxOperando.Items.Clear();
+            textBoxNum1.Text = "";
+            textBoxNum2.Text="";
+            lblResultado.Text = "";
+            comboBoxOperando.Text = null;
         }
         private void FormCalculadora_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -93,5 +109,7 @@ namespace MiCalculadora
                 e.Cancel = true;
             }
         }
+
+     
     }
 }

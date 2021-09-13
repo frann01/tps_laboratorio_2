@@ -29,99 +29,103 @@ namespace MiCalculadora
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.btnConvertirABinario = new System.Windows.Forms.Button();
+            this.btnConvertirADecimal = new System.Windows.Forms.Button();
+            this.btnOperar = new System.Windows.Forms.Button();
+            this.btnLimpiar = new System.Windows.Forms.Button();
+            this.btnCerrar = new System.Windows.Forms.Button();
+            this.lstOperaciones = new System.Windows.Forms.ListBox();
             this.textBoxNum2 = new System.Windows.Forms.TextBox();
             this.textBoxNum1 = new System.Windows.Forms.TextBox();
             this.comboBoxOperando = new System.Windows.Forms.ComboBox();
+            this.lblResultado = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // btnConvertirABinario
             // 
-            this.button1.Location = new System.Drawing.Point(12, 221);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(236, 50);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Convertir a binario";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.buttonConvertirBin_Click);
+            this.btnConvertirABinario.Location = new System.Drawing.Point(12, 221);
+            this.btnConvertirABinario.Name = "btnConvertirABinario";
+            this.btnConvertirABinario.Size = new System.Drawing.Size(236, 50);
+            this.btnConvertirABinario.TabIndex = 0;
+            this.btnConvertirABinario.Text = "Convertir a binario";
+            this.btnConvertirABinario.UseVisualStyleBackColor = true;
+            this.btnConvertirABinario.Click += new System.EventHandler(this.buttonConvertirBin_Click);
             // 
-            // button2
+            // btnConvertirADecimal
             // 
-            this.button2.Location = new System.Drawing.Point(267, 221);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(241, 50);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Convertir a Decimal";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.buttonConvertirDec_Click);
+            this.btnConvertirADecimal.Location = new System.Drawing.Point(267, 221);
+            this.btnConvertirADecimal.Name = "btnConvertirADecimal";
+            this.btnConvertirADecimal.Size = new System.Drawing.Size(241, 50);
+            this.btnConvertirADecimal.TabIndex = 1;
+            this.btnConvertirADecimal.Text = "Convertir a Decimal";
+            this.btnConvertirADecimal.UseVisualStyleBackColor = true;
+            this.btnConvertirADecimal.Click += new System.EventHandler(this.buttonConvertirDec_Click);
             // 
-            // button3
+            // btnOperar
             // 
-            this.button3.Location = new System.Drawing.Point(12, 145);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(149, 48);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Operar";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.buttonOperar_Click);
+            this.btnOperar.Location = new System.Drawing.Point(12, 145);
+            this.btnOperar.Name = "btnOperar";
+            this.btnOperar.Size = new System.Drawing.Size(149, 48);
+            this.btnOperar.TabIndex = 2;
+            this.btnOperar.Text = "Operar";
+            this.btnOperar.UseVisualStyleBackColor = true;
+            this.btnOperar.Click += new System.EventHandler(this.buttonOperar_Click);
             // 
-            // button4
+            // btnLimpiar
             // 
-            this.button4.Location = new System.Drawing.Point(184, 145);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(158, 48);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Limpiar";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.buttonLimpiar_Click);
+            this.btnLimpiar.Location = new System.Drawing.Point(184, 145);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(158, 48);
+            this.btnLimpiar.TabIndex = 3;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.buttonLimpiar_Click);
             // 
-            // button5
+            // btnCerrar
             // 
-            this.button5.Location = new System.Drawing.Point(370, 145);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(138, 48);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Cerrar";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.buttonCerrar_Click);
+            this.btnCerrar.Location = new System.Drawing.Point(370, 145);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(138, 48);
+            this.btnCerrar.TabIndex = 4;
+            this.btnCerrar.Text = "Cerrar";
+            this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.Click += new System.EventHandler(this.buttonCerrar_Click);
             // 
-            // listBox1
+            // lstOperaciones
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 15;
-            this.listBox1.Location = new System.Drawing.Point(514, 11);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(147, 274);
-            this.listBox1.TabIndex = 6;
+            this.lstOperaciones.FormattingEnabled = true;
+            this.lstOperaciones.ItemHeight = 15;
+            this.lstOperaciones.Location = new System.Drawing.Point(514, 11);
+            this.lstOperaciones.Name = "lstOperaciones";
+            this.lstOperaciones.Size = new System.Drawing.Size(147, 274);
+            this.lstOperaciones.TabIndex = 6;
             // 
             // textBoxNum2
             // 
-            this.textBoxNum2.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBoxNum2.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.textBoxNum2.Location = new System.Drawing.Point(370, 64);
             this.textBoxNum2.Name = "textBoxNum2";
             this.textBoxNum2.Size = new System.Drawing.Size(138, 43);
             this.textBoxNum2.TabIndex = 7;
+            this.textBoxNum2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBoxNum1
             // 
-            this.textBoxNum1.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBoxNum1.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.textBoxNum1.Location = new System.Drawing.Point(12, 64);
             this.textBoxNum1.Name = "textBoxNum1";
             this.textBoxNum1.Size = new System.Drawing.Size(149, 43);
             this.textBoxNum1.TabIndex = 8;
+            this.textBoxNum1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // comboBoxOperando
             // 
             this.comboBoxOperando.AllowDrop = true;
             this.comboBoxOperando.DropDownHeight = 120;
             this.comboBoxOperando.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxOperando.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.comboBoxOperando.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.comboBoxOperando.FormattingEnabled = true;
+            this.comboBoxOperando.IntegralHeight = false;
             this.comboBoxOperando.Items.AddRange(new object[] {
             '+',
             "-",
@@ -132,24 +136,39 @@ namespace MiCalculadora
             this.comboBoxOperando.Size = new System.Drawing.Size(121, 45);
             this.comboBoxOperando.TabIndex = 9;
             // 
+            // lblResultado
+            // 
+            this.lblResultado.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.lblResultado.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblResultado.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblResultado.Location = new System.Drawing.Point(12, 11);
+            this.lblResultado.Name = "lblResultado";
+            this.lblResultado.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblResultado.Size = new System.Drawing.Size(496, 37);
+            this.lblResultado.TabIndex = 0;
+            this.lblResultado.Text = "0";
+            this.lblResultado.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // FormCalculadora
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(671, 300);
+            this.Controls.Add(this.lblResultado);
             this.Controls.Add(this.comboBoxOperando);
             this.Controls.Add(this.textBoxNum1);
             this.Controls.Add(this.textBoxNum2);
-            this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.lstOperaciones);
+            this.Controls.Add(this.btnCerrar);
+            this.Controls.Add(this.btnLimpiar);
+            this.Controls.Add(this.btnOperar);
+            this.Controls.Add(this.btnConvertirADecimal);
+            this.Controls.Add(this.btnConvertirABinario);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormCalculadora";
+            this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculadora de Francisco Szellner division 2do A";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormCalculadora_FormClosing);
@@ -161,15 +180,16 @@ namespace MiCalculadora
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Button btnConvertirABinario;
+        private System.Windows.Forms.Button btnConvertirADecimal;
+        private System.Windows.Forms.Button btnOperar;
+        private System.Windows.Forms.Button btnLimpiar;
+        private System.Windows.Forms.Button btnCerrar;
+        private System.Windows.Forms.ListBox lstOperaciones;
         private System.Windows.Forms.TextBox textBoxNum2;
         private System.Windows.Forms.TextBox textBoxNum1;
         private System.Windows.Forms.ComboBox comboBoxOperando;
+        private System.Windows.Forms.Label lblResultado;
     }
 }
 

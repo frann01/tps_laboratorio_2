@@ -16,7 +16,7 @@ namespace Entidades
             return retorno;
         }
 
-        public double Operar(Operando num1, Operando num2, char operador) 
+        public static double Operar(Operando num1, Operando num2, char operador) 
         {
             char simbolo = validarOperando(operador);
             double resultado=0;
