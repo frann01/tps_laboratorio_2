@@ -18,10 +18,23 @@ namespace MiCalculadora
         {
             InitializeComponent();
         }
+
+        /// <summary>
+        /// Ejecuta la funcion limpiar
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void buttonLimpiar_Click(object sender, EventArgs e)
         {
             Limpiar();
         }
+
+        /// <summary>
+        /// ejecuta la operacion necesaria en caso de tener todos los datos necesarios y
+        /// muestra el resultado en el label correspondiente y la operacion en la listbox
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void buttonOperar_Click(object sender, EventArgs e)
         {
             if(textBoxNum1.Text != "" && textBoxNum2.Text != "" && comboBoxOperando.Text != "") 
@@ -41,6 +54,11 @@ namespace MiCalculadora
             }
         }
 
+        /// <summary>
+        /// Convierte el resultado (de haber uno) en binario
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void buttonConvertirBin_Click(object sender, EventArgs e)
         {
             if(lblResultado.Text != "")
@@ -50,6 +68,11 @@ namespace MiCalculadora
             
         }
 
+        /// <summary>
+        /// Convierte el resultado (de haber uno) en decimal
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void buttonConvertirDec_Click(object sender, EventArgs e)
         {
             bool bandera = true;
@@ -71,21 +94,43 @@ namespace MiCalculadora
             }
         }
 
+        /// <summary>
+        /// Realiza la cuenta utilizando la clase calculadora
+        /// </summary>
+        /// <param name="num1"></param>
+        /// <param name="num2"></param>
+        /// <param name="operador"></param>
+        /// <returns></returns>
         public static double Operar(Operando num1, Operando num2, char operador) 
         {
             double resultado = Calculadora.Operar(num1, num2, operador);
             return resultado;
         }
 
+        /// <summary>
+        /// Cierra el programa
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void buttonCerrar_Click(object sender, EventArgs e)
         {
             Close();
         }
+
+        /// <summary>
+        /// Carga el form y llama a la funcion Limpiar
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FormCalculadora_Load(object sender, EventArgs e)
         {
             Limpiar();
             lblResultado.Text = "0";
         }
+
+        /// <summary>
+        /// Limpia los textbox,mcombobox y el label del formulario
+        /// </summary>
         private void Limpiar() 
         {
             textBoxNum1.Text = "";
@@ -93,6 +138,12 @@ namespace MiCalculadora
             lblResultado.Text = "";
             comboBoxOperando.Text = null;
         }
+
+        /// <summary>
+        /// Ejecuta un messagebox antes de que se cierre el programa
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FormCalculadora_FormClosing(object sender, FormClosingEventArgs e)
         {
             string mensaje = "Seguro de querer salir?";

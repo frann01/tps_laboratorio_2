@@ -8,20 +8,33 @@ namespace Entidades
     {
         private double numero;
 
+        /// <summary>
+        /// Contructor base
+        /// </summary>
         public Operando() 
         {
             this.numero = 0;
         }
+        /// <summary>
+        /// Constructor con un parametro
+        /// </summary>
+        /// <param name="entero">Numero a asignar</param>
         public Operando(double entero)
         {
             this.Numero = entero.ToString();
         }
+        /// <summary>
+        ///  Constructor con un parametro
+        /// </summary>
+        /// <param name="entero">Numero a asignar</param>
         public Operando(string entero)
         {
             this.Numero = entero;
         }
 
-        
+        /// <summary>
+        /// get y set de la clase
+        /// </summary>
         public string Numero 
         {
             get 
@@ -37,6 +50,11 @@ namespace Entidades
             }
         }
         
+        /// <summary>
+        /// Valida que el valor ingresado sea un numero
+        /// </summary>
+        /// <param name="numberStr">valor a validar</param>
+        /// <returns>0 en caso de que no sea valido, el numero en caso de serlo</returns>
         private double ValidarOperando(string numberStr) 
         {
             double retorno;
@@ -49,6 +67,11 @@ namespace Entidades
             return retorno;
         }
 
+        /// <summary>
+        /// valida que la cadena ingresada sea un numero binario
+        /// </summary>
+        /// <param name="binario">cadena a validar</param>
+        /// <returns>true en caso de ser binario, false en caso de que no</returns>
         private static bool EsBinario(string binario)
         {
             bool retorno = true;
@@ -71,10 +94,21 @@ namespace Entidades
             return retorno;
         }
 
+        /// <summary>
+        /// transforma un double a binario
+        /// </summary>
+        /// <param name="numero"></param>
+        /// <returns></returns>
         public static string decimalBinario(double numero) 
         {
             return decimalBinario(numero.ToString());
         }
+
+        /// <summary>
+        /// trasforma un numero decimal en formato string a un numero binario en formato string
+        /// </summary>
+        /// <param name="numeroStr"></param>
+        /// <returns></returns>
         public static string decimalBinario(string numeroStr)
         {
             long binario = 0;
@@ -98,6 +132,11 @@ namespace Entidades
             return numeroStr;
         }
 
+        /// <summary>
+        /// transforma un numero binario en decimal
+        /// </summary>
+        /// <param name="numeroStr"></param>
+        /// <returns></returns>
         public static string binarioDecimal(string numeroStr)
         {
             double res=0;
@@ -119,18 +158,45 @@ namespace Entidades
             return retorno;
         }
 
+        /// <summary>
+        /// sobreescribe el operador + para sumar la variable numero de dos operandos
+        /// </summary>
+        /// <param name="a"></param>
+        /// <param name="b"></param>
+        /// <returns></returns>
         public static double operator +(Operando a, Operando b)
         {
             return a.numero + b.numero;
         }
+
+        /// <summary>
+        /// sobreescribe el operador - para restar la variable numero de dos operandos
+        /// </summary>
+        /// <param name="a"></param>
+        /// <param name="b"></param>
+        /// <returns></returns>
         public static double operator -(Operando a, Operando b)
         {
             return a.numero - b.numero;
         }
+
+        /// <summary>
+        /// sobreescribe el operador / para dividir la variable numero de dos operandos
+        /// </summary>
+        /// <param name="a"></param>
+        /// <param name="b"></param>
+        /// <returns></returns>
         public static double operator /(Operando a, Operando b)
         {
             return a.numero / b.numero;
         }
+
+        /// <summary>
+        /// sobreescribe el operador * para multiplicar la variable numero de dos operandos
+        /// </summary>
+        /// <param name="a"></param>
+        /// <param name="b"></param>
+        /// <returns></returns>
         public static double operator *(Operando a, Operando b)
         {
             return a.numero * b.numero;
