@@ -28,3 +28,13 @@ C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP1\MiCalculadora\Enti
 C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP1\MiCalculadora\EntidadesM\obj\Debug\netcoreapp3.1\EntidadesMal.csproj.CoreCompileInputs.cache
 C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP1\MiCalculadora\EntidadesM\obj\Debug\netcoreapp3.1\EntidadesMal.dll
 C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP1\MiCalculadora\EntidadesM\obj\Debug\netcoreapp3.1\EntidadesMal.pdb
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP1 - Recuperatorio\MiCalculadora\EntidadesM\bin\Debug\netcoreapp3.1\EntidadesMal.deps.json
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP1 - Recuperatorio\MiCalculadora\EntidadesM\bin\Debug\netcoreapp3.1\EntidadesMal.dll
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP1 - Recuperatorio\MiCalculadora\EntidadesM\bin\Debug\netcoreapp3.1\EntidadesMal.pdb
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP1 - Recuperatorio\MiCalculadora\EntidadesM\obj\Debug\netcoreapp3.1\EntidadesMal.csproj.AssemblyReference.cache
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP1 - Recuperatorio\MiCalculadora\EntidadesM\obj\Debug\netcoreapp3.1\EntidadesMal.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP1 - Recuperatorio\MiCalculadora\EntidadesM\obj\Debug\netcoreapp3.1\EntidadesMal.AssemblyInfoInputs.cache
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP1 - Recuperatorio\MiCalculadora\EntidadesM\obj\Debug\netcoreapp3.1\EntidadesMal.AssemblyInfo.cs
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP1 - Recuperatorio\MiCalculadora\EntidadesM\obj\Debug\netcoreapp3.1\EntidadesMal.csproj.CoreCompileInputs.cache
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP1 - Recuperatorio\MiCalculadora\EntidadesM\obj\Debug\netcoreapp3.1\EntidadesMal.dll
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP1 - Recuperatorio\MiCalculadora\EntidadesM\obj\Debug\netcoreapp3.1\EntidadesMal.pdb

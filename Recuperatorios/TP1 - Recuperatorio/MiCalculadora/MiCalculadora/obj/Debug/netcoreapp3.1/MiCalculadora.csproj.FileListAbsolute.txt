@@ -55,3 +55,22 @@ C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP1\MiCalculadora\MiCa
 C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP1\MiCalculadora\MiCalculadora\obj\Debug\netcoreapp3.1\MiCalculadora.dll
 C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP1\MiCalculadora\MiCalculadora\obj\Debug\netcoreapp3.1\MiCalculadora.pdb
 C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP1\MiCalculadora\MiCalculadora\obj\Debug\netcoreapp3.1\MiCalculadora.genruntimeconfig.cache
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP1 - Recuperatorio\MiCalculadora\MiCalculadora\bin\Debug\netcoreapp3.1\MiCalculadora.exe
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP1 - Recuperatorio\MiCalculadora\MiCalculadora\bin\Debug\netcoreapp3.1\MiCalculadora.deps.json
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP1 - Recuperatorio\MiCalculadora\MiCalculadora\bin\Debug\netcoreapp3.1\MiCalculadora.runtimeconfig.json
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP1 - Recuperatorio\MiCalculadora\MiCalculadora\bin\Debug\netcoreapp3.1\MiCalculadora.runtimeconfig.dev.json
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP1 - Recuperatorio\MiCalculadora\MiCalculadora\bin\Debug\netcoreapp3.1\MiCalculadora.dll
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP1 - Recuperatorio\MiCalculadora\MiCalculadora\bin\Debug\netcoreapp3.1\MiCalculadora.pdb
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP1 - Recuperatorio\MiCalculadora\MiCalculadora\bin\Debug\netcoreapp3.1\EntidadesMal.dll
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP1 - Recuperatorio\MiCalculadora\MiCalculadora\bin\Debug\netcoreapp3.1\EntidadesMal.pdb
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP1 - Recuperatorio\MiCalculadora\MiCalculadora\obj\Debug\netcoreapp3.1\MiCalculadora.csproj.AssemblyReference.cache
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP1 - Recuperatorio\MiCalculadora\MiCalculadora\obj\Debug\netcoreapp3.1\MiCalculadora.FormCalculadora.resources
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP1 - Recuperatorio\MiCalculadora\MiCalculadora\obj\Debug\netcoreapp3.1\MiCalculadora.csproj.GenerateResource.cache
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP1 - Recuperatorio\MiCalculadora\MiCalculadora\obj\Debug\netcoreapp3.1\MiCalculadora.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP1 - Recuperatorio\MiCalculadora\MiCalculadora\obj\Debug\netcoreapp3.1\MiCalculadora.AssemblyInfoInputs.cache
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP1 - Recuperatorio\MiCalculadora\MiCalculadora\obj\Debug\netcoreapp3.1\MiCalculadora.AssemblyInfo.cs
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP1 - Recuperatorio\MiCalculadora\MiCalculadora\obj\Debug\netcoreapp3.1\MiCalculadora.csproj.CoreCompileInputs.cache
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP1 - Recuperatorio\MiCalculadora\MiCalculadora\obj\Debug\netcoreapp3.1\MiCalculadora.csproj.CopyComplete
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP1 - Recuperatorio\MiCalculadora\MiCalculadora\obj\Debug\netcoreapp3.1\MiCalculadora.dll
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP1 - Recuperatorio\MiCalculadora\MiCalculadora\obj\Debug\netcoreapp3.1\MiCalculadora.pdb
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP1 - Recuperatorio\MiCalculadora\MiCalculadora\obj\Debug\netcoreapp3.1\MiCalculadora.genruntimeconfig.cache

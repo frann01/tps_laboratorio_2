@@ -11,25 +11,24 @@ namespace Entidades
         /// <summary>
         /// Contructor base
         /// </summary>
-        public Operando() 
+        public Operando() :this(0)
         {
-            this.numero = 0;
         }
         
         /// <summary>
         ///  Constructor con un parametro
         /// </summary>
         /// <param name="entero">Numero a asignar</param>
-        public Operando(string entero) : this()
+        public Operando(string strNumero)
         {
-            this.Numero = entero;
+            this.Numero = strNumero;
         }
 
         /// <summary>
         /// Constructor con un parametro
         /// </summary>
         /// <param name="entero">Numero a asignar</param>
-        public Operando(double entero) : this(entero.ToString())
+        public Operando(double numero) : this(numero.ToString())
         {
         }
 
