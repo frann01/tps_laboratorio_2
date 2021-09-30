@@ -49,53 +49,44 @@ namespace Entidades
         /// <param name="taller">Elemento a exponer</param>
         /// <param name="ETipo">Tipos de ítems de la lista a mostrar</param>
         /// <returns></returns>
+
         public string Listar(Taller taller, ETipo tipo)
         {
-            StringBuilder sb = new StringBuilder(400);
+            StringBuilder sb = new StringBuilder();
 
             sb.AppendFormat("Tenemos {0} lugares ocupados de un total de {1} disponibles", taller.vehiculos.Count, taller.espacioDisponible);
             sb.AppendLine("");
-
-             switch (tipo)
-             {
+            foreach (Vehiculo v in taller.vehiculos)
+            {
+                switch (tipo)
+                {
                     case ETipo.Camioneta:
-                    foreach (Vehiculo v in taller.vehiculos)
-                    {
-                        if(v.GetType().ToString() == "Entidades.Suv") 
-                        {
-                            sb.AppendLine(v.Mostrar());
-                        }
-                    }
-                    break;
-
-                    case ETipo.Moto:
-                    foreach (Vehiculo v in taller.vehiculos)
-                    {
-                        if (v.GetType().ToString() == "Entidades.Ciclomotor") 
+                        if (v.GetType().ToString() == "Entidades.Suv" ) 
                         {
                             sb.AppendLine(v.Mostrar());
                         } 
-                    }
-                    break;
+                        break;
+
+                    case ETipo.Moto:
+                        if (v.GetType().ToString() == "Entidades.Ciclomotor")
+                        {
+                            sb.AppendLine(v.Mostrar());
+                        }
+                        break;
 
                     case ETipo.Automovil:
-                    foreach (Vehiculo v in taller.vehiculos)
-                    {
                         if (v.GetType().ToString() == "Entidades.Sedan")
                         {
                             sb.AppendLine(v.Mostrar());
                         }
-                    }
-                    break;
+                        break;
 
                     default:
-                    foreach (Vehiculo v in taller.vehiculos)
-                    {
                         sb.AppendLine(v.Mostrar());
-                    }
-                    break;
+                        break;
+                }
             }
-                
+
             return sb.ToString();
         }
         #endregion

@@ -43,11 +43,11 @@ namespace Entidades
 
         public override sealed string Mostrar()
         {
-            StringBuilder sb = new StringBuilder(200);
+            StringBuilder sb = new StringBuilder();
 
             sb.AppendLine("SEDAN");
             sb.AppendLine((string)this);
-            sb.AppendLine("TAMAÑO : "+ this.Tamanio);
+            sb.Append("TAMAÑO : "+ this.Tamanio);
             sb.AppendLine("TIPO : " + this.tipo);
             sb.AppendLine("");
             sb.AppendLine("---------------------");
