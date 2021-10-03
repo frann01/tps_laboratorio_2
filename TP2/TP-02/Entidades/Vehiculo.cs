@@ -10,7 +10,11 @@ namespace Entidades
     /// <summary>
     /// La clase Vehiculo no deberá permitir que se instancien elementos de este tipo.
     /// </summary>
+#pragma warning disable CS0660 // El tipo define operator == or operator !=, pero no reemplaza a override Object.Equals(object o)
+#pragma warning disable CS0661 // El tipo define operator == or operator !=, pero no reemplaza a Object.GetHashCode()
     public abstract class Vehiculo
+#pragma warning restore CS0661 // El tipo define operator == or operator !=, pero no reemplaza a Object.GetHashCode()
+#pragma warning restore CS0660 // El tipo define operator == or operator !=, pero no reemplaza a override Object.Equals(object o)
     {
         
         public enum EMarca
@@ -73,7 +77,24 @@ namespace Entidades
         /// <returns></returns>
         public static bool operator ==(Vehiculo v1, Vehiculo v2)
         {
-            return (v1.chasis == v2.chasis);
+            bool rta = false;
+
+            if (((object)v1) == null && ((object)v2) == null)
+            {
+                rta = true;
+            }
+            else
+            {
+                if (((object)v1) != null && ((object)v2) != null)
+                {
+                    if (v1.chasis == v2.chasis)
+                    {
+                        rta = true;
+                    }
+                }
+            }
+
+            return rta;
         }
         /// <summary>
         /// Dos vehiculos son distintos si su chasis es distinto
