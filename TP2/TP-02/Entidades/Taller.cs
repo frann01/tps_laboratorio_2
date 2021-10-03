@@ -19,10 +19,15 @@ namespace Entidades
         }
 
         #region "Constructores"
+        /// <summary>
+        /// Constructor privado inicializa la lista
+        /// </summary>
         private Taller()
         {
             this.vehiculos = new List<Vehiculo>();
         }
+
+
         public Taller(int espacioDisponible) : this()
         {
             this.espacioDisponible = espacioDisponible;
@@ -61,7 +66,7 @@ namespace Entidades
                 switch (tipo)
                 {
                     case ETipo.Camioneta:
-                        if (v.GetType().ToString() == "Entidades.Suv" ) 
+                        if (v.GetType().ToString() == "Entidades.Suv")
                         {
                             sb.AppendLine(v.Mostrar());
                         } 
@@ -129,15 +134,18 @@ namespace Entidades
         /// <returns></returns>
         public static Taller operator -(Taller taller, Vehiculo vehiculo)
         {
-            foreach (Vehiculo v in taller.vehiculos)
+            if(taller.vehiculos.Count > 0)
             {
-                if (v == vehiculo)
+                foreach (Vehiculo v in taller.vehiculos)
                 {
-                    taller.vehiculos.Remove(vehiculo);
-                    break;
+                    if (v == vehiculo)
+                    {
+                        taller.vehiculos.Remove(vehiculo);
+                        break;
+                    }
                 }
             }
-
+            
             return taller;
         }
         #endregion
