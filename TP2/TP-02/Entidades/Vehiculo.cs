@@ -52,10 +52,11 @@ namespace Entidades
         /// Publica todos los datos del Vehiculo.
         /// </summary>
         /// <returns></returns>
-        public virtual string Mostrar()
+        public virtual string Mostrar() 
         {
             return (string)this;
         }
+
 
         public static explicit operator string(Vehiculo p)
         {
@@ -65,6 +66,7 @@ namespace Entidades
             sb.AppendLine("MARCA : "+ p.marca.ToString()); 
             sb.AppendLine("COLOR : "+ p.color.ToString());
             sb.AppendLine("---------------------");
+            sb.Append("TAMAÑO: "+p.Tamanio);
 
             return sb.ToString();
         }

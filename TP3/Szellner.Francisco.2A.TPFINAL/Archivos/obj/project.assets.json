@@ -1,0 +1,136 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0": {
+      "MaterialSkin.2/2.2.1": {
+        "type": "package",
+        "compile": {
+          "lib/net461/MaterialSkin.dll": {}
+        },
+        "runtime": {
+          "lib/net461/MaterialSkin.dll": {}
+        }
+      },
+      "Excepciones/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Excepciones.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Excepciones.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MaterialSkin.2/2.2.1": {
+      "sha512": "dxOn6yKbNZGiqjFGgjtC+C4yEc53PApwDabhcgOdqK+FCdsYUcFh0GunmJUPMJ2uIM2PmGDZM9Nf0BQCX9uhPg==",
+      "type": "package",
+      "path": "materialskin.2/2.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "images/nugetIcon.png",
+        "lib/net461/MaterialSkin.dll",
+        "materialskin.2.2.2.1.nupkg.sha512",
+        "materialskin.2.nuspec"
+      ]
+    },
+    "Excepciones/1.0.0": {
+      "type": "project",
+      "path": "../Excepciones/Excepciones.csproj",
+      "msbuildProject": "../Excepciones/Excepciones.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0": [
+      "Excepciones >= 1.0.0",
+      "MaterialSkin.2 >= 2.2.1"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\USUARIO\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\USUARIO\\Desktop\\tps_laboratorio_2\\TP3\\Szellner.Francisco.2A.TPFINAL\\Archivos\\Archivos.csproj",
+      "projectName": "Archivos",
+      "projectPath": "C:\\Users\\USUARIO\\Desktop\\tps_laboratorio_2\\TP3\\Szellner.Francisco.2A.TPFINAL\\Archivos\\Archivos.csproj",
+      "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\USUARIO\\Desktop\\tps_laboratorio_2\\TP3\\Szellner.Francisco.2A.TPFINAL\\Archivos\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {
+            "C:\\Users\\USUARIO\\Desktop\\tps_laboratorio_2\\TP3\\Szellner.Francisco.2A.TPFINAL\\Excepciones\\Excepciones.csproj": {
+              "projectPath": "C:\\Users\\USUARIO\\Desktop\\tps_laboratorio_2\\TP3\\Szellner.Francisco.2A.TPFINAL\\Excepciones\\Excepciones.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0": {
+        "targetAlias": "net5.0",
+        "dependencies": {
+          "MaterialSkin.2": {
+            "target": "Package",
+            "version": "[2.2.1, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"MaterialSkin.2 2.2.1\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\" en lugar de la plataforma de destino del proyecto \"net5.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "MaterialSkin.2",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
+}
