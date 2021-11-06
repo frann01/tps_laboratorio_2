@@ -54,7 +54,7 @@ namespace DisqueriaApp
             // 
             // btnAceptarNuevaDisqueria
             // 
-            this.btnAceptarNuevaDisqueria.Location = new System.Drawing.Point(12, 115);
+            this.btnAceptarNuevaDisqueria.Location = new System.Drawing.Point(146, 117);
             this.btnAceptarNuevaDisqueria.Name = "btnAceptarNuevaDisqueria";
             this.btnAceptarNuevaDisqueria.Size = new System.Drawing.Size(93, 36);
             this.btnAceptarNuevaDisqueria.TabIndex = 2;
@@ -64,7 +64,7 @@ namespace DisqueriaApp
             // 
             // btnCancelNewDisqueria
             // 
-            this.btnCancelNewDisqueria.Location = new System.Drawing.Point(146, 115);
+            this.btnCancelNewDisqueria.Location = new System.Drawing.Point(12, 117);
             this.btnCancelNewDisqueria.Name = "btnCancelNewDisqueria";
             this.btnCancelNewDisqueria.Size = new System.Drawing.Size(93, 36);
             this.btnCancelNewDisqueria.TabIndex = 3;

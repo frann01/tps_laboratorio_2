@@ -9,7 +9,7 @@ namespace PruebaEntidades
     {
         static void Main(string[] args)
         {
-            
+            //Creo Discos
             Vinilo v1 = new Vinilo("Clics Modernos", EGenero.Rock, 1983, "Charly Garcia", ETipoArtista.Solista, ETipoVinilo.Usado, 500);
             Vinilo v2 = new Vinilo("Clics Modernos", EGenero.Rock, 1983, "Charly Garcia", ETipoArtista.Solista, ETipoVinilo.Nuevo, 500);
             Vinilo v3 = new Vinilo("A love Supreme", EGenero.Jazz, 1964, "John Coltrane", ETipoArtista.Solista, ETipoVinilo.Usado, 500);
@@ -21,6 +21,7 @@ namespace PruebaEntidades
             CD cd4 = new CD("Blackout", EGenero.Pop, 2007, "Britney Spears", ETipoArtista.Solista, 500);
             CD cd5 = new CD("Electric lady", EGenero.Rock, 1969, "Jimi Hendrix", ETipoArtista.Solista, 500);
 
+            ///Creo clientes
             Cliente c1 = new Cliente("Juan", ESexo.Hombre, 15);
             Cliente c2 = new Cliente("Maria", ESexo.Mujer, 20);
             Cliente c3 = new Cliente("Ana", ESexo.NoBinario, 20);
@@ -37,21 +38,21 @@ namespace PruebaEntidades
 
             try
             {
-                CD cd6 = new CD("Anoche", EGenero.Rock, 1800, "Babasonicos", ETipoArtista.Banda, 500);
+                CD cd6 = new CD("Anoche", EGenero.Rock, 1800, "Babasonicos", ETipoArtista.Banda, 500); //Año es invalido
             }
             catch (AñoInvalidoException e)
             {
-                Console.WriteLine(e.Message); //Año es invalido
+                Console.WriteLine(e.Message); 
             }
 
 
             try
             {
-                CD cd7 = new CD("Anoche", EGenero.Rock, 1996, "Babasonicos", ETipoArtista.Banda, -6);
+                CD cd7 = new CD("Anoche", EGenero.Rock, 1996, "Babasonicos", ETipoArtista.Banda, -6); //Precio es invalido
             }
             catch (PrecioInvalidoException e)
             {
-                Console.WriteLine(e.Message);  //Precio es invalido
+                Console.WriteLine(e.Message);  
             }
 
             if (v1 != v2) 
@@ -64,6 +65,7 @@ namespace PruebaEntidades
                 Console.WriteLine("Son iguales\n"); //Son exactamente iguales
             }
 
+            //Creo disqueria
             Tienda<Disco> disqueria = new Tienda<Disco>(6);
 
             disqueria += v1;
@@ -92,9 +94,10 @@ namespace PruebaEntidades
                 Console.WriteLine(e.Message);
             }
              
-
+            //Muestro solo el stock
             Console.WriteLine(Tienda<Disco>.Mostrar(disqueria, ETipoMostrar.Stock));
 
+            //Genero ventas
             Tienda<Disco>.Vender(disqueria, v1, c1);
             Tienda<Disco>.Vender(disqueria,  v4,c2);
             Tienda<Disco>.Vender(disqueria,  cd3, c3);
@@ -111,18 +114,14 @@ namespace PruebaEntidades
                 Console.WriteLine(e.Message);
             }
 
-            
+            //Muestro stock y ventas
             Console.WriteLine(Tienda<Disco>.Mostrar(disqueria, ETipoMostrar.Todos));
 
 
             try
             {
-
-                //Serializador<Tienda<Disco>> xml = new Serializador<Tienda<Disco>>();
-                //xml.Guardar("ArchivosPrueba.xml", disqueria);
-
-                Tienda<Disco>.Guardar(disqueria, "ArchivoPruebaConsola.xml");
-                Console.WriteLine("Archivo de Universidad guardado.");
+                Tienda<Disco>.Guardar(disqueria, "ArchivoPruebaConsola.xml"); //Guardo el archivo
+                Console.WriteLine("Archivo guardado.");
             }
             catch (ErrorArchivoException e)
             {
@@ -134,8 +133,7 @@ namespace PruebaEntidades
 
             try
             {
-                //Serializador<Tienda<Disco>> xml = new Serializador<Tienda<Disco>>();
-                disqueria2 = Tienda<Disco>.Leer("ArchivosPrueba.xml");
+                disqueria2 = Tienda<Disco>.Leer("ArchivosPrueba.xml"); //Leo el archivo guardado y muestro sus ventas
                 Console.WriteLine("Se leyo");
                 Console.WriteLine(Tienda<Disco>.Mostrar(disqueria2, ETipoMostrar.Vendidos));
             }
