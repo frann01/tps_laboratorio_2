@@ -4,6 +4,9 @@ using Excepciones;
 
 namespace PruebasUnitarias
 {
+    /// <summary>
+    /// Uso de pruebas Unitarias
+    /// </summary>
     public class Tests
     {
         [SetUp]

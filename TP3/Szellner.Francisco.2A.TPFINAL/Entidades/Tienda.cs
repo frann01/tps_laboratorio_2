@@ -10,6 +10,10 @@ using Archivos;
 
 namespace Entidades
 {
+    /// <summary>
+    /// Uso de clases genericas
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     [XmlInclude(typeof(List<Venta>)), XmlInclude(typeof(List<Disco>))]
     public class Tienda<T> where T : Disco 
     {

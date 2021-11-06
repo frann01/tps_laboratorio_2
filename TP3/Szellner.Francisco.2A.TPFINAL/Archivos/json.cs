@@ -8,6 +8,9 @@ using Excepciones;
 
 namespace Archivos
 {
+    /// <summary>
+    /// Uso de interfaces
+    /// </summary>
     class json : IArchivo<string>
     {
         private StreamWriter streamWriter;

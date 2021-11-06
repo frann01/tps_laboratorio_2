@@ -10,11 +10,17 @@ using System.Xml.Serialization;
 
 namespace Archivos
 {
+    /// <summary>
+    /// Uso de interfaces
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     public class Serializador<T> : IArchivo<T> where T : class
     {
         private XmlTextWriter xmlTextWriter;
         private XmlTextReader xmlTextReader;
         private XmlSerializer xmlSerializer;
+
+        #region Funciones
 
         /// <summary>
         /// Guarda los datos de tipo T pasados en un archivo .xml en el path dado 
@@ -87,5 +93,7 @@ namespace Archivos
                 throw new ErrorArchivoException(e);
             }
         }
+
+        #endregion
     }
 }

@@ -39,6 +39,7 @@ namespace DisqueriaApp
 
         }
 
+        #region Funciones
         private void btn_NuevoVinilo_Click(object sender, EventArgs e)
         {
             this.AgregarDisco(sender, e);
@@ -76,7 +77,12 @@ namespace DisqueriaApp
         }
 
         
-        
+        /// <summary>
+        /// Crea instancia del form correcto segun que boton fue presionado 
+        /// Uso de excepciones
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void AgregarDisco(object sender, EventArgs e)
         {
             FormDisco frm = null;
@@ -108,6 +114,9 @@ namespace DisqueriaApp
             
         }
 
+        /// <summary>
+        /// Actualiza el listbox con el stock
+        /// </summary>
         private void ActualizarListadoStock()
         {
             this.lstStock.Items.Clear();
@@ -150,5 +159,7 @@ namespace DisqueriaApp
                 MessageBox.Show("Todavia no se realizo ninguna compra!", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
+        #endregion
     }
 }
