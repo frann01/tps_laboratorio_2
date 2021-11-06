@@ -36,6 +36,8 @@ namespace DisqueriaApp
 
         protected override void btn_Aceptar_Click(object sender, EventArgs e)
         {
+            int añoNuevo;
+            float precioNuevo;
             try 
             {
                 if (String.IsNullOrEmpty(base.txtTItulo.Text) 
@@ -50,16 +52,23 @@ namespace DisqueriaApp
                 }
                 else 
                 {
-                    this.discoDelForm = new Vinilo
+                    if(int.TryParse(base.txtAño.Text ,out añoNuevo) && float.TryParse(base.txtPrecio.Text,out precioNuevo)) 
+                    {
+                        this.discoDelForm = new Vinilo
                                 (base.txtTItulo.Text,
                                 (EGenero)base.cboGenero.SelectedItem,
-                                int.Parse(base.txtAño.Text),
+                                añoNuevo,
                                 base.txtNombreArtista.Text,
                                 (ETipoArtista)base.cboTipoArtista.SelectedItem,
                                 (ETipoVinilo)this.cboCondicionVinilo.SelectedItem,
-                                float.Parse(base.txtPrecio.Text));
+                                precioNuevo);
 
-                    base.btn_Aceptar_Click(sender, e);
+                        base.btn_Aceptar_Click(sender, e);
+                    }
+                    else 
+                    {
+                        MessageBox.Show("Por favor ingrese los tipos de datos correctos!", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
                 }
                 
             }

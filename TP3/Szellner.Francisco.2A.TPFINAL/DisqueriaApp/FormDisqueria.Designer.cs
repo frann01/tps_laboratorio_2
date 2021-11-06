@@ -107,6 +107,7 @@ namespace DisqueriaApp
             this.txtGanancia.Name = "txtGanancia";
             this.txtGanancia.Size = new System.Drawing.Size(178, 39);
             this.txtGanancia.TabIndex = 5;
+            this.txtGanancia.ReadOnly = true;
             // 
             // btn_NuevoVinilo
             // 
