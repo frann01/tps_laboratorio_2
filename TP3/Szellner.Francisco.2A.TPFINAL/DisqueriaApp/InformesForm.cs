@@ -80,49 +80,49 @@ namespace DisqueriaApp
             {
                 if (vRock.Count == mayor)
                 {
-                    mostrarMayor += "Rock ";
+                    mostrarMayor += "Rock, ";
                 }
                 else
                 {
                     if (vRock.Count == minimo)
                     {
-                        mostrarMenor += "Rock ";
+                        mostrarMenor += "Rock, ";
                     }
                 }
 
                 if (vJazz.Count == mayor)
                 {
-                    mostrarMayor += "Jazz ";
+                    mostrarMayor += "Jazz, ";
                 }
                 else
                 {
                     if (vJazz.Count == minimo)
                     {
-                        mostrarMenor += "Jazz ";
+                        mostrarMenor += "Jazz, ";
                     }
                 }
 
                 if (vPop.Count == mayor)
                 {
-                    mostrarMayor += "Pop ";
+                    mostrarMayor += "Pop, ";
                 }
                 else
                 {
                     if (vPop.Count == minimo)
                     {
-                        mostrarMenor += "Pop ";
+                        mostrarMenor += "Pop, ";
                     }
                 }
 
                 if (vExperimental.Count == mayor)
                 {
-                    mostrarMayor += "Experimental ";
+                    mostrarMayor += "Experimental, ";
                 }
                 else
                 {
                     if (vExperimental.Count == minimo)
                     {
-                        mostrarMenor += "Experimental ";
+                        mostrarMenor += "Experimental, ";
                     }
                 }
 
@@ -245,6 +245,11 @@ namespace DisqueriaApp
         private void InformesForm_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_Aceptar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
