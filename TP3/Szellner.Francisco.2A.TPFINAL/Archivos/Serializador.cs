@@ -16,6 +16,12 @@ namespace Archivos
         private XmlTextReader xmlTextReader;
         private XmlSerializer xmlSerializer;
 
+        /// <summary>
+        /// Guarda los datos de tipo T pasados en un archivo .xml en el path dado 
+        /// </summary>
+        /// <param name="path"></param>
+        /// <param name="datos"></param>
+        /// <returns></returns>
         public bool Guardar(string path, T datos)
         {
             bool sePudoGuadar = false;
@@ -45,6 +51,12 @@ namespace Archivos
             }
         }
 
+        /// <summary>
+        /// deserializa los datos del path dado, si existen previamente
+        /// </summary>
+        /// <param name="archivos"></param>
+        /// <param name="datos"></param>
+        /// <returns></returns>
         public bool Leer(string archivos, out T datos)
         {
             bool retorno = false;

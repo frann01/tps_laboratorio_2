@@ -11,7 +11,7 @@ using Archivos;
 namespace Entidades
 {
     [XmlInclude(typeof(List<Venta>)), XmlInclude(typeof(List<Disco>))]
-    public class Tienda<T> where T : Disco
+    public class Tienda<T> where T : Disco 
     {
         private int capacidad;
         private List<T> stock;
