@@ -27,6 +27,11 @@ namespace Entidades
         #endregion
 
         #region sobrecargas
+
+        /// <summary>
+        /// Muestra los datos del CD
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
@@ -37,6 +42,12 @@ namespace Entidades
             return sb.ToString();
         }
 
+        /// <summary>
+        /// Compara dos cds en su formato base (disco)
+        /// </summary>
+        /// <param name="b1"></param>
+        /// <param name="b2"></param>
+        /// <returns></returns>
         public static bool operator ==(CD b1, CD b2)
         {
             return (Disco)b1 == (Disco)b2;

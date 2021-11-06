@@ -33,6 +33,9 @@ namespace Entidades
         }
         #endregion
 
+        /// <summary>
+        /// Setters y Getters publicos para que xml pueda guardarlos
+        /// </summary>
         #region Getters y setters
         public string Stock
         {
@@ -103,8 +106,17 @@ namespace Entidades
 
         #endregion
 
+
         #region Funciones
 
+        /// <summary>
+        /// Al vender un disco lo elimina de la lista de stock, crea una nueva instancia de venta y lo agrega a la lista de ventas
+        /// junto con el cliente
+        /// </summary>
+        /// <param name="tienda"></param>
+        /// <param name="producto"></param>
+        /// <param name="cliente"></param>
+        /// <returns></returns>
         public static int Vender(Tienda<T> tienda, T producto, Cliente cliente) 
         {
             int retorno = 1;
@@ -119,6 +131,12 @@ namespace Entidades
             return retorno;
         }
         
+        /// <summary>
+        /// Muestra los datos de la tienda y dependiendo del tipo el stock, las ventas o los dos
+        /// </summary>
+        /// <param name="b"></param>
+        /// <param name="tipo"></param>
+        /// <returns></returns>
         public static string Mostrar(Tienda<T> b, ETipoMostrar tipo)
         {
             StringBuilder sb = new StringBuilder();
@@ -147,6 +165,11 @@ namespace Entidades
             return sb.ToString();
         }
 
+        /// <summary>
+        /// Usa un serializar para leer un archivo tipo .xml
+        /// </summary>
+        /// <param name="path"></param>
+        /// <returns></returns>
         public static Tienda<T> Leer(string path)
         {
             Serializador<Tienda<T>> datos = new Serializador<Tienda<T>>();
@@ -155,6 +178,12 @@ namespace Entidades
             return tienda;
         }
 
+        /// <summary>
+        /// Guarda los datos de una tienda en un archivo .xml usando un serializador
+        /// </summary>
+        /// <param name="t"></param>
+        /// <param name="path"></param>
+        /// <returns></returns>
         public static bool Guardar(Tienda<T> t, string path)
         {
             Serializador<Tienda<T>> xml = new Serializador<Tienda<T>>();
@@ -165,6 +194,13 @@ namespace Entidades
         #endregion
 
         #region Sobrecargas
+
+        /// <summary>
+        /// Indica si un producto se encuentra en stock
+        /// </summary>
+        /// <param name="b"></param>
+        /// <param name="l"></param>
+        /// <returns></returns>
         public static bool operator ==(Tienda<T> b, T l)
         {
             bool rta = false;
@@ -188,6 +224,12 @@ namespace Entidades
             return !(b == l);
         }
 
+        /// <summary>
+        /// Agrega un producto al stock si esta no esta ya en la lista
+        /// </summary>
+        /// <param name="b"></param>
+        /// <param name="l"></param>
+        /// <returns></returns>
         public static Tienda<T> operator +(Tienda<T> b, T l)
         {
             if (b == l)
@@ -211,6 +253,12 @@ namespace Entidades
             return b;
         }
 
+        /// <summary>
+        /// Elimina un producto de la lista stock si este se encuentra en ella
+        /// </summary>
+        /// <param name="d"></param>
+        /// <param name="item"></param>
+        /// <returns></returns>
         public static Tienda<T> operator -(Tienda<T> d, T item)
         {
             if (d.stock.Count > 0)

@@ -37,6 +37,13 @@ namespace Entidades
         #endregion
 
         #region Sobrecargas
+
+        /// <summary>
+        /// Dos artista son iguales si tienen el mismo nombre
+        /// </summary>
+        /// <param name="b1"></param>
+        /// <param name="b2"></param>
+        /// <returns></returns>
         public static bool operator ==(Artista b1, Artista b2)
         {
             bool rta = false;

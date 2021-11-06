@@ -23,7 +23,6 @@ namespace Entidades
             this.genero = genero;
             this.Precio = precio;
         }
-
         public Disco(string titulo, EGenero genero, int año, string nombreArtista, ETipoArtista tipo, float precio) 
             :this(titulo, genero,año, new Artista(nombreArtista, tipo), precio) {}
 
@@ -77,6 +76,12 @@ namespace Entidades
         #endregion
 
         #region Funciones
+
+        /// <summary>
+        /// Valida que el precio sea mayor que 0
+        /// </summary>
+        /// <param name="precio"></param>
+        /// <returns></returns>
         private float ValidarPrecio(float precio) 
         {
             if(precio <= 0) 
@@ -86,6 +91,12 @@ namespace Entidades
             return precio;
         }
 
+
+        /// <summary>
+        /// Valida que el año sea correcto
+        /// </summary>
+        /// <param name="año"></param>
+        /// <returns></returns>
         private int ValidarAño(int año)
         {
             if (año < 1900 || año > 2022)
@@ -95,6 +106,11 @@ namespace Entidades
             return año;
         }
 
+        /// <summary>
+        /// Muestra los datos base del disco
+        /// </summary>
+        /// <param name="l"></param>
+        /// <returns></returns>
         private static string Mostrar(Disco l)
         {
             StringBuilder sb = new StringBuilder();
@@ -116,6 +132,12 @@ namespace Entidades
             return Mostrar(a);
         }
 
+        /// <summary>
+        /// Compara que dos discos tenga el mismo titulo y artista
+        /// </summary>
+        /// <param name="b1"></param>
+        /// <param name="b2"></param>
+        /// <returns></returns>
         public static bool operator ==(Disco b1, Disco b2)
         {
             bool rta = false;

@@ -49,6 +49,11 @@ namespace Entidades
         #endregion
 
         #region Sobrecargas
+
+        /// <summary>
+        /// Muestra los datos de la venta
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();

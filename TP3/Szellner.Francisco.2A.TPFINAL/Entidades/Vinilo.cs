@@ -46,6 +46,10 @@ namespace Entidades
 
         #region Sobrecargas
 
+        /// <summary>
+        /// Muestra los datos del dico
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
@@ -57,6 +61,13 @@ namespace Entidades
             return sb.ToString();
         }
 
+
+        /// <summary>
+        /// COmpara dos vinilos como disco y si tienen la misma condicion
+        /// </summary>
+        /// <param name="b1"></param>
+        /// <param name="b2"></param>
+        /// <returns></returns>
         public static bool operator ==(Vinilo b1, Vinilo b2)
         {
             bool rta = false;
