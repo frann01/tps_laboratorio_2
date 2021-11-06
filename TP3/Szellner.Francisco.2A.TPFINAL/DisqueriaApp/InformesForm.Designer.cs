@@ -40,6 +40,8 @@ namespace DisqueriaApp
             this.lblCantDiscos = new System.Windows.Forms.Label();
             this.lblTipoDisco = new System.Windows.Forms.Label();
             this.btn_Aceptar = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.lblMenorGenero = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -134,18 +136,38 @@ namespace DisqueriaApp
             // 
             // btn_Aceptar
             // 
-            this.btn_Aceptar.Location = new System.Drawing.Point(141, 154);
+            this.btn_Aceptar.Location = new System.Drawing.Point(169, 192);
             this.btn_Aceptar.Name = "btn_Aceptar";
             this.btn_Aceptar.Size = new System.Drawing.Size(159, 51);
             this.btn_Aceptar.TabIndex = 10;
             this.btn_Aceptar.Text = "Aceptar";
             this.btn_Aceptar.UseVisualStyleBackColor = true;
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(12, 152);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(266, 15);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "- Los generos que vendieron menor cantidad son";
+            // 
+            // lblMenorGenero
+            // 
+            this.lblMenorGenero.AutoSize = true;
+            this.lblMenorGenero.Location = new System.Drawing.Point(284, 152);
+            this.lblMenorGenero.Name = "lblMenorGenero";
+            this.lblMenorGenero.Size = new System.Drawing.Size(44, 15);
+            this.lblMenorGenero.TabIndex = 12;
+            this.lblMenorGenero.Text = "label10";
+            // 
             // InformesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(431, 217);
+            this.ClientSize = new System.Drawing.Size(479, 255);
+            this.Controls.Add(this.lblMenorGenero);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.btn_Aceptar);
             this.Controls.Add(this.lblTipoDisco);
             this.Controls.Add(this.lblCantDiscos);
@@ -177,5 +199,7 @@ namespace DisqueriaApp
         private System.Windows.Forms.Label lblTipoDisco;
         private System.Windows.Forms.Button btn_Aceptar;
         private System.Windows.Forms.Label lblSexo;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lblMenorGenero;
     }
 }

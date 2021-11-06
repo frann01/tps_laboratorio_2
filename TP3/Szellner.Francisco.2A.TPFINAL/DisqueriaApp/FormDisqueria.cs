@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Entidades;
+using Excepciones;
 
 namespace DisqueriaApp
 {
@@ -94,8 +95,15 @@ namespace DisqueriaApp
 
             if (frm.ShowDialog() == DialogResult.OK)
             {
-                this.disqueria += frm.DiscoDelForm;
-               this.ActualizarListadoStock();
+                try
+                {
+                    this.disqueria += frm.DiscoDelForm;
+                    this.ActualizarListadoStock();
+                }
+                catch (SinLugarException excep)
+                {
+                    MessageBox.Show(excep.Message, "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
             
         }

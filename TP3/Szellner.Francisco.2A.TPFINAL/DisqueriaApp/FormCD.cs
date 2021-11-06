@@ -63,6 +63,7 @@ namespace DisqueriaApp
             {
                 MessageBox.Show(excep.Message, "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+            
         }
 
         protected override void btn_Cancelar_Click(object sender, EventArgs e)

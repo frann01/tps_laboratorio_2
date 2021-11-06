@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Entidades;
-using MaterialSkin;
 
 namespace DisqueriaApp
 {
@@ -31,6 +30,7 @@ namespace DisqueriaApp
             this.lblCantDiscos.Text = this.disqueriaDelForm.VentasListado.Count + " discos en total";
         }
 
+        #region Funciones Informes
         private void ObtenerTipoDisco()
         {
             List<Venta> vCd = this.disqueriaDelForm.VentasListado.FindAll(EsCD);
@@ -58,7 +58,8 @@ namespace DisqueriaApp
         }
         private void obtenerGeneroMasComprado() 
         {
-            string mostrar = "";
+            string mostrarMayor = "";
+            string mostrarMenor = "";
             List<Venta> vJazz = this.disqueriaDelForm.VentasListado.FindAll(esDeJazz); 
             List<Venta> vRock = this.disqueriaDelForm.VentasListado.FindAll(esDeRock);
             List<Venta> vPop = this.disqueriaDelForm.VentasListado.FindAll(esDePop);
@@ -67,28 +68,68 @@ namespace DisqueriaApp
             List<int> cantidades = new List<int>() { vRock.Count, vJazz.Count, vPop.Count, vExperimental.Count };
 
             int mayor = cantidades.Max();
-
-            if(vRock.Count == mayor) 
+            int minimo = cantidades.Min();
+            if(vRock.Count == vJazz.Count && vRock.Count == vPop.Count && vRock.Count == vExperimental.Count) 
             {
-                mostrar += "Rock ";
+                this.label1.Text = "- Se vendio la misma cantidad de todos los generos";
+                this.lbl_GeneroMasComprado.Text = "";
+                this.label6.Text = "";
+                this.lblMenorGenero.Text = "";
             }
-
-            if (vJazz.Count == mayor)
+            else 
             {
-                mostrar += "Jazz ";
-            }
+                if (vRock.Count == mayor)
+                {
+                    mostrarMayor += "Rock ";
+                }
+                else
+                {
+                    if (vRock.Count == minimo)
+                    {
+                        mostrarMenor += "Rock ";
+                    }
+                }
 
-            if (vPop.Count == mayor)
-            {
-                mostrar += "Pop ";
-            }
+                if (vJazz.Count == mayor)
+                {
+                    mostrarMayor += "Jazz ";
+                }
+                else
+                {
+                    if (vJazz.Count == minimo)
+                    {
+                        mostrarMenor += "Jazz ";
+                    }
+                }
 
-            if (vExperimental.Count == mayor)
-            {
-                mostrar += "Experimental ";
-            }
+                if (vPop.Count == mayor)
+                {
+                    mostrarMayor += "Pop ";
+                }
+                else
+                {
+                    if (vPop.Count == minimo)
+                    {
+                        mostrarMenor += "Pop ";
+                    }
+                }
 
-            this.lbl_GeneroMasComprado.Text = mostrar;
+                if (vExperimental.Count == mayor)
+                {
+                    mostrarMayor += "Experimental ";
+                }
+                else
+                {
+                    if (vExperimental.Count == minimo)
+                    {
+                        mostrarMenor += "Experimental ";
+                    }
+                }
+
+                this.lbl_GeneroMasComprado.Text = mostrarMayor + "con " + mayor + " discos";
+                this.lblMenorGenero.Text = mostrarMenor + "con " + minimo + " discos";
+            }
+            
         }
 
         private void RangoEtario()
@@ -139,6 +180,10 @@ namespace DisqueriaApp
 
             this.lblSexo.Text = mostrar;
         }
+
+        #endregion
+
+        #region Funciones filtro
 
         private static bool esMenorDe30(Venta v)
         {
@@ -194,6 +239,9 @@ namespace DisqueriaApp
         {
             return v.DiscoVendido is Vinilo;
         }
+
+        #endregion 
+
         private void InformesForm_Load(object sender, EventArgs e)
         {
 

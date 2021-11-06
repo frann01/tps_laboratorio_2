@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using Entidades;
 using Archivos;
 using Excepciones;
+using System.IO;
 
 namespace DisqueriaApp
 {
@@ -32,8 +33,26 @@ namespace DisqueriaApp
             {
                 if (!String.IsNullOrEmpty(this.txtPath.Text))
                 {
-                    Tienda<Disco>.Guardar(tiendaAGuardar, this.txtPath.Text + ".xml");
-                    this.DialogResult = DialogResult.OK;
+                    if (File.Exists(this.txtPath.Text + ".xml")) 
+                    {
+                        DialogResult dialogResult = MessageBox.Show("Ya existe un archivo con ese nombre ¿Desea sobreescribirlo?", "Atencion", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                        if(dialogResult == DialogResult.Yes) 
+                        {
+                            Tienda<Disco>.Guardar(tiendaAGuardar, this.txtPath.Text + ".xml");
+                            this.DialogResult = DialogResult.OK;
+                        }
+                        else 
+                        {
+                            MessageBox.Show("El archivo no fue guardado", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            this.DialogResult = DialogResult.Cancel;
+                            this.Close();
+                        }
+                    }
+                    else 
+                    {
+                        Tienda<Disco>.Guardar(tiendaAGuardar, this.txtPath.Text + ".xml");
+                        this.DialogResult = DialogResult.OK;
+                    }
                 }
                 else 
                 {

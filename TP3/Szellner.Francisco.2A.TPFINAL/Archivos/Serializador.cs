@@ -51,7 +51,7 @@ namespace Archivos
             datos = default;
             try
             {
-                if (File.Exists( archivos))
+                if (File.Exists(archivos))
                 {
                     using (xmlTextReader = new XmlTextReader(archivos))
                     {

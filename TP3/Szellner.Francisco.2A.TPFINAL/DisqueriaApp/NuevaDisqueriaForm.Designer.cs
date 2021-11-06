@@ -38,7 +38,7 @@ namespace DisqueriaApp
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(45, 70);
+            this.label1.Location = new System.Drawing.Point(45, 31);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(88, 15);
             this.label1.TabIndex = 0;
@@ -47,14 +47,14 @@ namespace DisqueriaApp
             // 
             // txtCantidad
             // 
-            this.txtCantidad.Location = new System.Drawing.Point(45, 88);
+            this.txtCantidad.Location = new System.Drawing.Point(45, 49);
             this.txtCantidad.Name = "txtCantidad";
             this.txtCantidad.Size = new System.Drawing.Size(157, 23);
             this.txtCantidad.TabIndex = 1;
             // 
             // btnAceptarNuevaDisqueria
             // 
-            this.btnAceptarNuevaDisqueria.Location = new System.Drawing.Point(12, 192);
+            this.btnAceptarNuevaDisqueria.Location = new System.Drawing.Point(12, 115);
             this.btnAceptarNuevaDisqueria.Name = "btnAceptarNuevaDisqueria";
             this.btnAceptarNuevaDisqueria.Size = new System.Drawing.Size(93, 36);
             this.btnAceptarNuevaDisqueria.TabIndex = 2;
@@ -64,7 +64,7 @@ namespace DisqueriaApp
             // 
             // btnCancelNewDisqueria
             // 
-            this.btnCancelNewDisqueria.Location = new System.Drawing.Point(146, 192);
+            this.btnCancelNewDisqueria.Location = new System.Drawing.Point(146, 115);
             this.btnCancelNewDisqueria.Name = "btnCancelNewDisqueria";
             this.btnCancelNewDisqueria.Size = new System.Drawing.Size(93, 36);
             this.btnCancelNewDisqueria.TabIndex = 3;
@@ -76,7 +76,7 @@ namespace DisqueriaApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(251, 241);
+            this.ClientSize = new System.Drawing.Size(251, 165);
             this.Controls.Add(this.btnCancelNewDisqueria);
             this.Controls.Add(this.btnAceptarNuevaDisqueria);
             this.Controls.Add(this.txtCantidad);

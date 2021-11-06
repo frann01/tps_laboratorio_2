@@ -1,11 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "KUd7ASqRizyCux05OocFBGRUypnsxokXpBkCps38JUt1vQM0oSJmhDo8OOSMzLNyvhyCcJIqGP+SLsR5MHL7qQ==",
+  "dgSpecHash": "GR1kf/n3gyeRUSRJTKd6ssc1+PqTgKF0wrA1N1QMs4kKxNqpzh6QqEc+pPV2GWM/aLk2E7QEcyhlw8Rc6xa6cw==",
   "success": true,
   "projectFilePath": "C:\\Users\\USUARIO\\Desktop\\tps_laboratorio_2\\TP3\\Szellner.Francisco.2A.TPFINAL\\PruebasUnitarias\\PruebasUnitarias.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USUARIO\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",
-    "C:\\Users\\USUARIO\\.nuget\\packages\\materialskin.2\\2.2.1\\materialskin.2.2.2.1.nupkg.sha512",
     "C:\\Users\\USUARIO\\.nuget\\packages\\microsoft.codecoverage\\16.9.4\\microsoft.codecoverage.16.9.4.nupkg.sha512",
     "C:\\Users\\USUARIO\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",
     "C:\\Users\\USUARIO\\.nuget\\packages\\microsoft.dotnet.internalabstractions\\1.0.0\\microsoft.dotnet.internalabstractions.1.0.0.nupkg.sha512",
@@ -78,16 +77,5 @@
     "C:\\Users\\USUARIO\\.nuget\\packages\\system.xml.xpath\\4.3.0\\system.xml.xpath.4.3.0.nupkg.sha512",
     "C:\\Users\\USUARIO\\.nuget\\packages\\system.xml.xpath.xmldocument\\4.3.0\\system.xml.xpath.xmldocument.4.3.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "El paquete \"MaterialSkin.2 2.2.1\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\" en lugar de la plataforma de destino del proyecto \"net5.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
-      "libraryId": "MaterialSkin.2",
-      "targetGraphs": [
-        "net5.0"
-      ]
-    }
-  ]
+  "logs": []
 }
