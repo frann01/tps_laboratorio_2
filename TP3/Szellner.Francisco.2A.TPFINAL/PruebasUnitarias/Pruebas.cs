@@ -16,7 +16,9 @@ namespace PruebasUnitarias
 
         #region Pruebas Tienda
 
-
+        /// <summary>
+        /// Valida que salte la excepcion NoEstaenDisqueriaException al tratar de borrar un disco que no este en la disqueria
+        /// </summary>
         [Test]
         public void ValidarDiscoAusente()
         {
@@ -35,6 +37,9 @@ namespace PruebasUnitarias
             }
         }
 
+        /// <summary>
+        /// Valida que se haya agregado un disco a la lista 
+        /// </summary>
         [Test]
         public void ValidarDiscoAgregado()
         {
@@ -44,9 +49,12 @@ namespace PruebasUnitarias
 
             disqueria += cd4;
 
-            Assert.IsTrue(disqueria.StockListado.Count == 1);
+            Assert.IsTrue(disqueria.StockListado.Count == 1 && disqueria == cd4);
         }
 
+        /// <summary>
+        /// Valida que se haya eliminado un disco de la disqueria
+        /// </summary>
         [Test]
         public void ValidarDiscoEliminado()
         {
@@ -57,9 +65,12 @@ namespace PruebasUnitarias
             disqueria += cd4;
             disqueria -= cd4;
 
-            Assert.IsTrue(disqueria.StockListado.Count == 0);
+            Assert.IsTrue(disqueria.StockListado.Count == 0 && disqueria != cd4);
         }
 
+        /// <summary>
+        /// Valida que se haya agregado un disco a la disqueria
+        /// </summary>
         [Test]
         public void ValidarDiscoEnDisqueria()
         {
@@ -72,6 +83,9 @@ namespace PruebasUnitarias
                 Assert.IsTrue(disqueria == cd4);
         }
 
+        /// <summary>
+        /// Valida que no se puede agregar un disco de mas a la Tienda
+        /// </summary>
         [Test]
         public void ValidarFaltadeLugar()
         {
@@ -92,6 +106,9 @@ namespace PruebasUnitarias
             }
         }
 
+        /// <summary>
+        /// Valida que se sume correctamente la ganancia a la vender stock
+        /// </summary>
         [Test]
         public void ValidarGanancia()
         {
@@ -110,6 +127,9 @@ namespace PruebasUnitarias
             Assert.IsTrue(disqueria.Ganacia == 670);
         }
 
+        /// <summary>
+        /// Valida que la lista no se creen en null en una nueva instancia de Tienda
+        /// </summary>
         [Test]
         public void ValidarLista()
         {
@@ -120,6 +140,9 @@ namespace PruebasUnitarias
 
         }
 
+        /// <summary>
+        /// Valida que una venta ocurra de manera correcta
+        /// </summary>
         [Test]
         public void ValidarVenta()
         {
@@ -138,6 +161,9 @@ namespace PruebasUnitarias
 
         #region Pruebas Disco
 
+        /// <summary>
+        /// Valida que no se pueda agregar un precio invalido
+        /// </summary>
         [Test]
         public void ValidarPrecioMenor()
         {
@@ -153,9 +179,10 @@ namespace PruebasUnitarias
             }
         }
 
-
+        /// <summary>
+        /// Valida que no se pueda agregar un año invalido
+        /// </summary>
         [Test]
-
         public void ValidarAñoMenor()
         {
             int año = -50;
@@ -170,6 +197,9 @@ namespace PruebasUnitarias
             }
         }
 
+        /// <summary>
+        /// Valida que no se pueda agregar un año invalido
+        /// </summary>
         [Test]
         public void ValidarAñoMayor()
         {
@@ -187,6 +217,9 @@ namespace PruebasUnitarias
 
         }
 
+        /// <summary>
+        /// Valida que los discos no se creen en null
+        /// </summary>
         [Test]
         public void ValidarNuevoDiscos()
         {
@@ -197,6 +230,9 @@ namespace PruebasUnitarias
             Assert.IsNotNull(v1);
         }
 
+        /// <summary>
+        /// Valida que dos discos sean iguales
+        /// </summary>
         [Test]
         public void ValidarIgualdadCD()
         {
@@ -272,6 +308,9 @@ namespace PruebasUnitarias
 
         #region Pruebas Clientes
 
+        /// <summary>
+        /// Valida que un nuevo cliente no se cree en null
+        /// </summary>
         [Test]
         public void ValidarNuevoCliente()
         {
@@ -280,6 +319,10 @@ namespace PruebasUnitarias
             Assert.NotNull(c3);
         }
 
+        /// <summary>
+        /// Valida que no se pueda ingresar una edad invalida
+        /// </summary>
+        [Test]
         public void ValidarClienteEdadGrande()
         {
             
@@ -295,6 +338,10 @@ namespace PruebasUnitarias
 
         }
 
+        /// <summary>
+        /// Valida que no se pueda ingresar una edad invalida
+        /// </summary>
+        [Test]
         public void ValidarClienteEdadChica()
         {
 
@@ -314,6 +361,9 @@ namespace PruebasUnitarias
 
         #region Pruebas Artistas
 
+        /// <summary>
+        /// Valida que dos artistas sean iguales
+        /// </summary>
         [Test]
         public void ValidarIgualdadArtista()
         {

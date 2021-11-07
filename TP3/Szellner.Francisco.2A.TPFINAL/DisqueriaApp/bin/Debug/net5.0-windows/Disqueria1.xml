@@ -54,6 +54,27 @@
       <Titulo>Vida</Titulo>
       <Condicion>Nuevo</Condicion>
     </Disco>
+    <Disco xsi:type="Vinilo">
+      <Precio>800</Precio>
+      <Año>1970</Año>
+      <Genero>Jazz</Genero>
+      <Artista>
+        <Nombre>Miles Davis</Nombre>
+        <Tipo>Solista</Tipo>
+      </Artista>
+      <Titulo>In a silent way</Titulo>
+      <Condicion>Nuevo</Condicion>
+    </Disco>
+    <Disco xsi:type="CD">
+      <Precio>900</Precio>
+      <Año>1969</Año>
+      <Genero>Jazz</Genero>
+      <Artista>
+        <Nombre>John Coltrane</Nombre>
+        <Tipo>Solista</Tipo>
+      </Artista>
+      <Titulo>A love Supreme</Titulo>
+    </Disco>
   </StockListado>
   <VentasListado>
     <Venta>

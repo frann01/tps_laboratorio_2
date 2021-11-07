@@ -104,7 +104,6 @@ C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP3\Szellner.Francisco.2A.TPFINAL\Pru
 C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP3\Szellner.Francisco.2A.TPFINAL\PruebasUnitarias\obj\Debug\net5.0\ref\PruebasUnitarias.dll
 C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP3\Szellner.Francisco.2A.TPFINAL\PruebasUnitarias\obj\Debug\net5.0\PruebasUnitarias.pdb
 C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP3\Szellner.Francisco.2A.TPFINAL\PruebasUnitarias\obj\Debug\net5.0\PruebasUnitarias.genruntimeconfig.cache
-C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP3\Szellner.Francisco.2A.TPFINAL\PruebasUnitarias\bin\Debug\net5.0\MaterialSkin.dll
 C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP3\Szellner.Francisco.2A.TPFINAL\PruebasUnitarias\bin\Debug\net5.0\System.Data.SqlClient.dll
 C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP3\Szellner.Francisco.2A.TPFINAL\PruebasUnitarias\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
 C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP3\Szellner.Francisco.2A.TPFINAL\PruebasUnitarias\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
