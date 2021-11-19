@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfDisco xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Disco>
+    <Precio>700</Precio>
+    <TipoDIsco>Vinilo</TipoDIsco>
+    <Año>1983</Año>
+    <Genero>Rock</Genero>
+    <Artista>
+      <Nombre>Charly Garcia</Nombre>
+      <Tipo>Solista</Tipo>
+    </Artista>
+    <Titulo>Clics Modernos</Titulo>
+  </Disco>
+  <Disco>
+    <Precio>600</Precio>
+    <TipoDIsco>CD</TipoDIsco>
+    <Año>2017</Año>
+    <Genero>Rock</Genero>
+    <Artista>
+      <Nombre>King Krule</Nombre>
+      <Tipo>Solista</Tipo>
+    </Artista>
+    <Titulo>The Ooz</Titulo>
+  </Disco>
+  <Disco>
+    <Precio>1000</Precio>
+    <TipoDIsco>CD</TipoDIsco>
+    <Año>1991</Año>
+    <Genero>Experimental</Genero>
+    <Artista>
+      <Nombre>MBV</Nombre>
+      <Tipo>Banda</Tipo>
+    </Artista>
+    <Titulo>Loveless</Titulo>
+  </Disco>
+</ArrayOfDisco>

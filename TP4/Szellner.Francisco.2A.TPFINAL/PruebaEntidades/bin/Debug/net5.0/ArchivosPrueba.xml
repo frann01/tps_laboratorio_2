@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TiendaOfDisco xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <StockListado>
+    <Disco xsi:type="Vinilo">
+      <Precio>500</Precio>
+      <Año>1983</Año>
+      <Genero>Rock</Genero>
+      <Artista>
+        <Nombre>Charly Garcia</Nombre>
+        <Tipo>Solista</Tipo>
+      </Artista>
+      <Titulo>Clics Modernos</Titulo>
+      <Condicion>Nuevo</Condicion>
+    </Disco>
+    <Disco xsi:type="Vinilo">
+      <Precio>500</Precio>
+      <Año>1964</Año>
+      <Genero>Jazz</Genero>
+      <Artista>
+        <Nombre>John Coltrane</Nombre>
+        <Tipo>Solista</Tipo>
+      </Artista>
+      <Titulo>A love Supreme</Titulo>
+      <Condicion>Usado</Condicion>
+    </Disco>
+  </StockListado>
+  <VentasListado>
+    <Venta>
+      <DiscoVendido xsi:type="Vinilo">
+        <Precio>500</Precio>
+        <Año>1983</Año>
+        <Genero>Rock</Genero>
+        <Artista>
+          <Nombre>Charly Garcia</Nombre>
+          <Tipo>Solista</Tipo>
+        </Artista>
+        <Titulo>Clics Modernos</Titulo>
+        <Condicion>Usado</Condicion>
+      </DiscoVendido>
+      <Cliente>
+        <Edad>15</Edad>
+        <Nombre>Juan</Nombre>
+      </Cliente>
+    </Venta>
+    <Venta>
+      <DiscoVendido xsi:type="Vinilo">
+        <Precio>500</Precio>
+        <Año>1983</Año>
+        <Genero>Rock</Genero>
+        <Artista>
+          <Nombre>My bloody valentine</Nombre>
+          <Tipo>Banda</Tipo>
+        </Artista>
+        <Titulo>Loveless</Titulo>
+        <Condicion>Nuevo</Condicion>
+      </DiscoVendido>
+      <Cliente>
+        <Edad>20</Edad>
+        <Nombre>Maria</Nombre>
+      </Cliente>
+    </Venta>
+    <Venta>
+      <DiscoVendido xsi:type="CD">
+        <Precio>500</Precio>
+        <Año>2001</Año>
+        <Genero>Rock</Genero>
+        <Artista>
+          <Nombre>Babasonicos</Nombre>
+          <Tipo>Banda</Tipo>
+        </Artista>
+        <Titulo>Anoche</Titulo>
+      </DiscoVendido>
+      <Cliente>
+        <Edad>20</Edad>
+        <Nombre>Ana</Nombre>
+      </Cliente>
+    </Venta>
+    <Venta>
+      <DiscoVendido xsi:type="CD">
+        <Precio>170</Precio>
+        <Año>1996</Año>
+        <Genero>Experimental</Genero>
+        <Artista>
+          <Nombre>Merzbow</Nombre>
+          <Tipo>Solista</Tipo>
+        </Artista>
+        <Titulo>Pulse Demon</Titulo>
+      </DiscoVendido>
+      <Cliente>
+        <Edad>20</Edad>
+        <Nombre>Ana</Nombre>
+      </Cliente>
+    </Venta>
+    <Venta>
+      <DiscoVendido xsi:type="CD">
+        <Precio>500</Precio>
+        <Año>2001</Año>
+        <Genero>Rock</Genero>
+        <Artista>
+          <Nombre>Babasonicos</Nombre>
+          <Tipo>Banda</Tipo>
+        </Artista>
+        <Titulo>Anoche</Titulo>
+      </DiscoVendido>
+      <Cliente>
+        <Edad>20</Edad>
+        <Nombre>Ana</Nombre>
+      </Cliente>
+    </Venta>
+  </VentasListado>
+  <Ganacia>1670</Ganacia>
+  <Cantidad>6</Cantidad>
+</TiendaOfDisco>
