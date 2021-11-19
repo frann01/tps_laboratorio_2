@@ -10,3 +10,15 @@ C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP3\Szellner.Francisco.2A.TPFINAL\Exc
 C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP3\Szellner.Francisco.2A.TPFINAL\Excepciones\obj\Debug\net5.0\Excepciones.dll
 C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP3\Szellner.Francisco.2A.TPFINAL\Excepciones\obj\Debug\net5.0\ref\Excepciones.dll
 C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP3\Szellner.Francisco.2A.TPFINAL\Excepciones\obj\Debug\net5.0\Excepciones.pdb
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP4\Szellner.Francisco.2A.TPFINAL\Excepciones\bin\Debug\net5.0\Excepciones.deps.json
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP4\Szellner.Francisco.2A.TPFINAL\Excepciones\bin\Debug\net5.0\Excepciones.dll
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP4\Szellner.Francisco.2A.TPFINAL\Excepciones\bin\Debug\net5.0\ref\Excepciones.dll
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP4\Szellner.Francisco.2A.TPFINAL\Excepciones\bin\Debug\net5.0\Excepciones.pdb
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP4\Szellner.Francisco.2A.TPFINAL\Excepciones\obj\Debug\net5.0\Excepciones.csproj.AssemblyReference.cache
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP4\Szellner.Francisco.2A.TPFINAL\Excepciones\obj\Debug\net5.0\Excepciones.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP4\Szellner.Francisco.2A.TPFINAL\Excepciones\obj\Debug\net5.0\Excepciones.AssemblyInfoInputs.cache
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP4\Szellner.Francisco.2A.TPFINAL\Excepciones\obj\Debug\net5.0\Excepciones.AssemblyInfo.cs
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP4\Szellner.Francisco.2A.TPFINAL\Excepciones\obj\Debug\net5.0\Excepciones.csproj.CoreCompileInputs.cache
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP4\Szellner.Francisco.2A.TPFINAL\Excepciones\obj\Debug\net5.0\Excepciones.dll
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP4\Szellner.Francisco.2A.TPFINAL\Excepciones\obj\Debug\net5.0\ref\Excepciones.dll
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP4\Szellner.Francisco.2A.TPFINAL\Excepciones\obj\Debug\net5.0\Excepciones.pdb

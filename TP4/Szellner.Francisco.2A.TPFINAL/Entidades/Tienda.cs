@@ -7,6 +7,7 @@ using Excepciones;
 using System.Xml;
 using System.Xml.Serialization;
 using Archivos;
+using System.IO;
 
 namespace Entidades
 {
@@ -21,14 +22,12 @@ namespace Entidades
         private List<T> stock;
         private List<Venta> ventas;
         private float ganancia;
-
-
+        
         #region Constructores
         private Tienda()
         {
             this.stock = new List<T>();
             this.ventas = new List<Venta>();
-            this.ganancia = 0;
         }
 
         public Tienda(int cantidad) : this()
@@ -36,6 +35,10 @@ namespace Entidades
             this.capacidad = cantidad;
         }
         #endregion
+
+        public delegate void DelegadoVenta(Venta venta);
+        public event DelegadoVenta VentaNueva;
+
 
         /// <summary>
         /// Setters y Getters publicos para que xml pueda guardarlos
@@ -137,9 +140,10 @@ namespace Entidades
             if(cliente != null) 
             {
                 Venta nuevaVenta = new Venta(producto, cliente);
+
                 AccesoDatos.AgregarVenta(nuevaVenta);
-                //tienda.ventas.Add(nuevaVenta);
-                //tienda -= producto;
+                tienda.VentaNueva.Invoke(nuevaVenta);
+                tienda.Ganacia = producto.Precio;
                 retorno = 0;
             }
 
@@ -205,6 +209,8 @@ namespace Entidades
 
             return xml.Guardar(path, t.StockListado);
         }
+
+        
 
         #endregion
 
@@ -280,7 +286,7 @@ namespace Entidades
             {
                if (d == item)
                {
-                    d.Ganacia = item.Precio;
+                    
                    d.stock.Remove(item);
                }
                else

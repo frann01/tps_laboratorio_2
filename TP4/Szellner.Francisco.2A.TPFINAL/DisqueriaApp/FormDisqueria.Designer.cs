@@ -194,6 +194,7 @@ namespace DisqueriaApp
             this.Name = "FormDisqueria";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Disqueria";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormDisqueria_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

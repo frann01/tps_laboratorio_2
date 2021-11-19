@@ -33,4 +33,15 @@
     </Artista>
     <Titulo>Loveless</Titulo>
   </Disco>
+  <Disco>
+    <Precio>1500</Precio>
+    <TipoDIsco>Vinilo</TipoDIsco>
+    <Año>1964</Año>
+    <Genero>Jazz</Genero>
+    <Artista>
+      <Nombre>John Coltrane</Nombre>
+      <Tipo>Solista</Tipo>
+    </Artista>
+    <Titulo>A love supreme</Titulo>
+  </Disco>
 </ArrayOfDisco>

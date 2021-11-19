@@ -19,19 +19,22 @@ namespace DisqueriaApp
         public FormDisqueria()
         {
             InitializeComponent();
+            Task tCargarVentas = new Task(cargarVentas);
             this.disqueria = new Tienda<Disco>(200);
-            this.disqueria.StockListado = Tienda<Disco>.Leer("StockDisqueria.xml");
+            this.disqueria.CargarGanacia();
+
+            this.disqueria.VentaNueva += MostrarDiscoVendido;
+            tCargarVentas.RunSynchronously();
             this.disqueria.VentasListado = AccesoDatos.ObtenerListaVentas();
+
+            this.txtGanancia.Text = string.Format("{0:C}", this.disqueria.Ganacia);
             this.ActualizarListadoStock();
             this.ActualizarListadoVendidos();
         }
 
-        public FormDisqueria(Tienda<Disco> disqueria) :this()
+        private void cargarVentas() 
         {
-            this.disqueria = disqueria;
-            this.ActualizarListadoStock();
-            this.ActualizarListadoVendidos();
-            this.txtGanancia.Text = string.Format("{0:C}", this.disqueria.Ganacia);
+            this.disqueria.StockListado = Tienda<Disco>.Leer("StockDisqueria.xml");
         }
 
         public Tienda<Disco> Disqueria 
@@ -78,7 +81,6 @@ namespace DisqueriaApp
                 {
                     Tienda<Disco>.Vender(this.disqueria, disco, frm.ClienteDelForm);
                     this.txtGanancia.Text = string.Format("{0:C}", this.disqueria.Ganacia);
-
                     this.ActualizarListadoStock();
                     this.ActualizarListadoVendidos();
                 }
@@ -91,6 +93,11 @@ namespace DisqueriaApp
             }
         }
 
+        private void MostrarDiscoVendido(Venta venta) 
+        {
+            string texto = "Se ha vendido el disco " + venta.DiscoVendido.Titulo + " a " + venta.Cliente.Nombre + " por " + venta.DiscoVendido.Precio + " pesos!";
+            MessageBox.Show(texto, "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
 
         /// <summary>
         /// Actualiza el listbox con el stock
@@ -163,6 +170,11 @@ namespace DisqueriaApp
             {
                 MessageBox.Show("Por favor seleccione un disco disponible!", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+        }
+
+        private void FormDisqueria_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.disqueria.GuardarGanacia();
         }
     }
 }

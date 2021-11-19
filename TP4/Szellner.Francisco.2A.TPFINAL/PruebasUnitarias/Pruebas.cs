@@ -15,7 +15,7 @@ namespace PruebasUnitarias
         }
 
         #region Pruebas Tienda
-
+        
         /// <summary>
         /// Valida que salte la excepcion NoEstaenDisqueriaException al tratar de borrar un disco que no este en la disqueria
         /// </summary>
@@ -24,7 +24,7 @@ namespace PruebasUnitarias
         {
             try
             {
-                CD cd4 = new CD("Anoche", EGenero.Rock, 2001, "Babasonicos", ETipoArtista.Banda, 500);
+                Disco cd4 = new Disco("Anoche", EGenero.Rock, 2001, "Babasonicos", ETipoArtista.Banda, 500, ETipoDisco.CD);
                 Tienda<Disco> disqueria = new Tienda<Disco>(6);
 
                 disqueria -= cd4;
@@ -43,8 +43,8 @@ namespace PruebasUnitarias
         [Test]
         public void ValidarDiscoAgregado()
         {
-            CD cd4 = new CD("Anoche", EGenero.Rock, 2001, "Babasonicos", ETipoArtista.Banda, 500);
-            Vinilo v4 = new Vinilo("Loveless", EGenero.Rock, 1983, "My bloody valentine", ETipoArtista.Banda, ETipoVinilo.Nuevo, 500);
+            Disco cd4 = new Disco("Anoche", EGenero.Rock, 2001, "Babasonicos", ETipoArtista.Banda, 500, ETipoDisco.CD);
+            Disco v4 = new Disco("Loveless", EGenero.Rock, 1983, "My bloody valentine", ETipoArtista.Banda, 500, ETipoDisco.Vinilo);
             Tienda<Disco> disqueria = new Tienda<Disco>(1);
 
             disqueria += cd4;
@@ -58,8 +58,8 @@ namespace PruebasUnitarias
         [Test]
         public void ValidarDiscoEliminado()
         {
-            CD cd4 = new CD("Anoche", EGenero.Rock, 2001, "Babasonicos", ETipoArtista.Banda, 500);
-            Vinilo v4 = new Vinilo("Loveless", EGenero.Rock, 1983, "My bloody valentine", ETipoArtista.Banda, ETipoVinilo.Nuevo, 500);
+            Disco cd4 = new Disco("Anoche", EGenero.Rock, 2001, "Babasonicos", ETipoArtista.Banda, 500, ETipoDisco.CD);
+            Disco v4 = new Disco("Loveless", EGenero.Rock, 1983, "My bloody valentine", ETipoArtista.Banda, 500, ETipoDisco.Vinilo);
             Tienda<Disco> disqueria = new Tienda<Disco>(1);
 
             disqueria += cd4;
@@ -74,8 +74,8 @@ namespace PruebasUnitarias
         [Test]
         public void ValidarDiscoEnDisqueria()
         {
-                CD cd4 = new CD("Anoche", EGenero.Rock, 2001, "Babasonicos", ETipoArtista.Banda, 500);
-                Vinilo v4 = new Vinilo("Loveless", EGenero.Rock, 1983, "My bloody valentine", ETipoArtista.Banda, ETipoVinilo.Nuevo, 500);
+                Disco cd4 = new Disco("Anoche", EGenero.Rock, 2001, "Babasonicos", ETipoArtista.Banda, 500, ETipoDisco.CD);
+                Disco v4 = new Disco("Loveless", EGenero.Rock, 1983, "My bloody valentine", ETipoArtista.Banda, 500,ETipoDisco.Vinilo);
                 Tienda<Disco> disqueria = new Tienda<Disco>(1);
 
                 disqueria += cd4;
@@ -91,8 +91,8 @@ namespace PruebasUnitarias
         {
             try
             {
-                CD cd4 = new CD("Anoche", EGenero.Rock, 2001, "Babasonicos", ETipoArtista.Banda, 500);
-                Vinilo v4 = new Vinilo("Loveless", EGenero.Rock, 1983, "My bloody valentine", ETipoArtista.Banda, ETipoVinilo.Nuevo, 500);
+                Disco cd4 = new Disco("Anoche", EGenero.Rock, 2001, "Babasonicos", ETipoArtista.Banda, 500, ETipoDisco.CD);
+                Disco v4 = new Disco("Loveless", EGenero.Rock, 1983, "My bloody valentine", ETipoArtista.Banda,  500, ETipoDisco.Vinilo);
                 Tienda<Disco> disqueria = new Tienda<Disco>(1);
 
                 disqueria += cd4;
@@ -106,26 +106,7 @@ namespace PruebasUnitarias
             }
         }
 
-        /// <summary>
-        /// Valida que se sume correctamente la ganancia a la vender stock
-        /// </summary>
-        [Test]
-        public void ValidarGanancia()
-        {
-            CD cd1 = new CD("Anoche", EGenero.Rock, 2001, "Babasonicos", ETipoArtista.Banda, 500);
-            CD cd2 = new CD("Pulse Demon", EGenero.Experimental, 1996, "Merzbow", ETipoArtista.Solista, 170);
-
-            Tienda<Disco> disqueria = new Tienda<Disco>(6);
-
-            disqueria += cd1;
-            disqueria += cd2;
-
-            disqueria -= cd1;
-            disqueria -= cd2;
-
-
-            Assert.IsTrue(disqueria.Ganacia == 670);
-        }
+       
 
         /// <summary>
         /// Valida que la lista no se creen en null en una nueva instancia de Tienda
@@ -140,27 +121,11 @@ namespace PruebasUnitarias
 
         }
 
-        /// <summary>
-        /// Valida que una venta ocurra de manera correcta
-        /// </summary>
-        [Test]
-        public void ValidarVenta()
-        {
-            int retorno;
-            Vinilo v4 = new Vinilo("Loveless", EGenero.Rock, 1983, "My bloody valentine", ETipoArtista.Banda, ETipoVinilo.Nuevo, 500);
-            Cliente c1 = new Cliente("Juan", ESexo.Hombre, 15);
-            Tienda<Disco> disqueria = new Tienda<Disco>(6);
-
-            disqueria += v4;
-            retorno = Tienda<Disco>.Vender(disqueria, v4, c1);
-
-            Assert.IsTrue(retorno == 0 && disqueria.StockListado.Count == 0);
-        }
-
+        
         #endregion
 
         #region Pruebas Disco
-
+        
         /// <summary>
         /// Valida que no se pueda agregar un precio invalido
         /// </summary>
@@ -170,7 +135,7 @@ namespace PruebasUnitarias
             int precioNeg = -50;
             try 
             {
-                Vinilo v1 = new Vinilo("Clics Modernos", EGenero.Rock, 1983, "Charly Garcia", ETipoArtista.Solista, ETipoVinilo.Usado, precioNeg);
+                Disco v1 = new Disco("Clics Modernos", EGenero.Rock, 1983, "Charly Garcia", ETipoArtista.Solista,  precioNeg, ETipoDisco.Vinilo);
                 Assert.Fail();
             }
             catch(PrecioInvalidoException)
@@ -188,7 +153,7 @@ namespace PruebasUnitarias
             int año = -50;
             try
             {
-                Vinilo v1 = new Vinilo("Clics Modernos", EGenero.Rock, año, "Charly Garcia", ETipoArtista.Solista, ETipoVinilo.Usado, 500);
+                Disco v1 = new Disco("Clics Modernos", EGenero.Rock, año, "Charly Garcia", ETipoArtista.Solista, 500, ETipoDisco.Vinilo);
                 Assert.Fail();
             }
             catch (AñoInvalidoException)
@@ -207,7 +172,7 @@ namespace PruebasUnitarias
             int año = 30000;
             try
             {
-                Vinilo v1 = new Vinilo("Clics Modernos", EGenero.Rock, año, "Charly Garcia", ETipoArtista.Solista, ETipoVinilo.Usado, 500);
+                Disco v1 = new Disco("Clics Modernos", EGenero.Rock, año, "Charly Garcia", ETipoArtista.Solista, 500, ETipoDisco.Vinilo);
                 Assert.Fail();
             }
             catch (AñoInvalidoException)
@@ -223,8 +188,8 @@ namespace PruebasUnitarias
         [Test]
         public void ValidarNuevoDiscos()
         {
-            CD cd1 = new CD("Anoche", EGenero.Rock, 2001, "Babasonicos", ETipoArtista.Banda, 500);
-            Vinilo v1 = new Vinilo("Pulse Demon", EGenero.Experimental, 1996, "Merzbow", ETipoArtista.Solista, ETipoVinilo.Nuevo, 170);
+            Disco cd1 = new Disco("Anoche", EGenero.Rock, 2001, "Babasonicos", ETipoArtista.Banda, 500, ETipoDisco.CD);
+            Disco v1 = new Disco("Pulse Demon", EGenero.Experimental, 1996, "Merzbow", ETipoArtista.Solista, 170, ETipoDisco.Vinilo);
 
             Assert.IsNotNull(cd1);
             Assert.IsNotNull(v1);
@@ -234,74 +199,35 @@ namespace PruebasUnitarias
         /// Valida que dos discos sean iguales
         /// </summary>
         [Test]
-        public void ValidarIgualdadCD()
+        public void ValidarIgualdad()
         {
             
-            CD cd3 = new CD("Anoche", EGenero.Rock, 2001, "Babasonicos", ETipoArtista.Banda, 500);
-            CD cd4 = new CD("Anoche", EGenero.Rock, 2001, "Babasonicos", ETipoArtista.Banda, 500);
+            Disco cd3 = new Disco("Anoche", EGenero.Rock, 2001, "Babasonicos", ETipoArtista.Banda, 500, ETipoDisco.CD);
+            Disco cd4 = new Disco("Anoche", EGenero.Rock, 2001, "Babasonicos", ETipoArtista.Banda, 500,ETipoDisco.CD);
                 
             Assert.IsTrue(cd3 == cd4);
         }
 
         [Test]
-        public void ValidarDiferenciaCDTitulo()
+        public void ValidarDiferenciaTitulo()
         {
            
-            CD cd3 = new CD("Anoche", EGenero.Rock, 2005, "Babasonicos", ETipoArtista.Banda, 500);
-            CD cd4 = new CD("Jessico", EGenero.Rock, 2001, "Babasonicos", ETipoArtista.Banda, 500);
+            Disco cd3 = new Disco("Anoche", EGenero.Rock, 2005, "Babasonicos", ETipoArtista.Banda, 500, ETipoDisco.CD);
+            Disco cd4 = new Disco("Jessico", EGenero.Rock, 2001, "Babasonicos", ETipoArtista.Banda, 500, ETipoDisco.CD);
 
             Assert.IsTrue(cd3 != cd4);
         }
 
         [Test]
-        public void ValidarDiferenciaCDArtista()
+        public void ValidarDiferenciaArtista()
         {
 
-            CD cd3 = new CD("Anoche", EGenero.Rock, 2005, "Babasonicos", ETipoArtista.Banda, 500);
-            CD cd4 = new CD("Anoche", EGenero.Rock, 2005, "Callejeros", ETipoArtista.Banda, 500);
+            Disco cd3 = new Disco("Anoche", EGenero.Rock, 2005, "Babasonicos", ETipoArtista.Banda, 500, ETipoDisco.CD);
+            Disco cd4 = new Disco("Anoche", EGenero.Rock, 2005, "Callejeros", ETipoArtista.Banda, 500, ETipoDisco.CD);
 
             Assert.IsTrue(cd3 != cd4);
         }
 
-        [Test]
-        public void ValidarIgualdadVInilo()
-        {
-
-            Vinilo cd3 = new Vinilo("Anoche", EGenero.Rock, 2001, "Babasonicos", ETipoArtista.Banda, ETipoVinilo.Nuevo, 500);
-            Vinilo cd4 = new Vinilo("Anoche", EGenero.Rock, 2001, "Babasonicos", ETipoArtista.Banda,ETipoVinilo.Nuevo,500);
-
-            Assert.IsTrue(cd3 == cd4);
-        }
-
-        [Test]
-        public void ValidarDIferenciaVIniloCondicion()
-        {
-
-            Vinilo cd3 = new Vinilo("Anoche", EGenero.Rock, 2001, "Babasonicos", ETipoArtista.Banda, ETipoVinilo.Nuevo, 500);
-            Vinilo cd4 = new Vinilo("Anoche", EGenero.Rock, 2001, "Babasonicos", ETipoArtista.Banda, ETipoVinilo.Usado, 500);
-
-            Assert.IsTrue(cd3 != cd4);
-        }
-
-        [Test]
-        public void ValidarDIferenciaVIniloTitulo()
-        {
-
-            Vinilo cd3 = new Vinilo("Anoche", EGenero.Rock, 2001, "Babasonicos", ETipoArtista.Banda, ETipoVinilo.Usado, 500);
-            Vinilo cd4 = new Vinilo("Ayer", EGenero.Rock, 2001, "Babasonicos", ETipoArtista.Banda, ETipoVinilo.Usado, 500);
-
-            Assert.IsTrue(cd3 != cd4);
-        }
-
-        [Test]
-        public void ValidarDIferenciaVIniloArtista()
-        {
-
-            Vinilo cd3 = new Vinilo("Anoche", EGenero.Rock, 2001, "Babasonicos", ETipoArtista.Banda, ETipoVinilo.Usado, 500);
-            Vinilo cd4 = new Vinilo("Anoche", EGenero.Rock, 2001, "Callejeros", ETipoArtista.Banda, ETipoVinilo.Usado, 500);
-
-            Assert.IsTrue(cd3 != cd4);
-        }
 
 
         #endregion
@@ -374,7 +300,7 @@ namespace PruebasUnitarias
         }
 
         [Test]
-        public void ValidarDiferenciaArtista()
+        public void ValidarDiferenciaArtistas()
         {
             Artista a1 = new Artista("Charly Garcia", ETipoArtista.Solista);
             Artista a2 = new Artista("Fito Paez", ETipoArtista.Solista);
@@ -390,6 +316,8 @@ namespace PruebasUnitarias
             Assert.NotNull(a1);
         }
 
+        
+        
         #endregion
     }
 }

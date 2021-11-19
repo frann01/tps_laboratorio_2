@@ -9,17 +9,18 @@ namespace PruebaEntidades
     {
         static void Main(string[] args)
         {
+            
             //Creo Discos
-            Vinilo v1 = new Vinilo("Clics Modernos", EGenero.Rock, 1983, "Charly Garcia", ETipoArtista.Solista, ETipoVinilo.Usado, 500);
-            Vinilo v2 = new Vinilo("Clics Modernos", EGenero.Rock, 1983, "Charly Garcia", ETipoArtista.Solista, ETipoVinilo.Nuevo, 500);
-            Vinilo v3 = new Vinilo("A love Supreme", EGenero.Jazz, 1964, "John Coltrane", ETipoArtista.Solista, ETipoVinilo.Usado, 500);
-            Vinilo v4 = new Vinilo("Loveless", EGenero.Rock, 1983, "My bloody valentine", ETipoArtista.Banda, ETipoVinilo.Nuevo, 500);
+            Disco v1 = new Disco("Clics Modernos", EGenero.Rock, 1983, "Charly Garcia", ETipoArtista.Solista, 500, ETipoDisco.Vinilo);
+            Disco v2 = new Disco("Clics Modernos", EGenero.Rock, 1983, "Charly Garcia", ETipoArtista.Solista, 500, ETipoDisco.Vinilo);
+            Disco v3 = new Disco("A love Supreme", EGenero.Jazz, 1964, "John Coltrane", ETipoArtista.Solista,  500, ETipoDisco.Vinilo);
+            Disco v4 = new Disco("Loveless", EGenero.Rock, 1983, "My bloody valentine", ETipoArtista.Banda, 500, ETipoDisco.Vinilo);
 
-            CD cd1 = new CD("Anoche", EGenero.Rock, 2001, "Babasonicos", ETipoArtista.Banda, 500);
-            CD cd2 = new CD("Pulse Demon", EGenero.Experimental, 1996, "Merzbow", ETipoArtista.Solista, 170);
-            CD cd3 = new CD("Anoche", EGenero.Rock, 2001, "Babasonicos", ETipoArtista.Banda, 500);
-            CD cd4 = new CD("Blackout", EGenero.Pop, 2007, "Britney Spears", ETipoArtista.Solista, 500);
-            CD cd5 = new CD("Electric lady", EGenero.Rock, 1969, "Jimi Hendrix", ETipoArtista.Solista, 500);
+            Disco cd1 = new Disco("Anoche", EGenero.Rock, 2001, "Babasonicos", ETipoArtista.Banda, 500, ETipoDisco.CD);
+            Disco cd2 = new Disco("Pulse Demon", EGenero.Experimental, 1996, "Merzbow", ETipoArtista.Solista, 170, ETipoDisco.CD);
+            Disco cd3 = new Disco("Anoche", EGenero.Rock, 2001, "Babasonicos", ETipoArtista.Banda, 500, ETipoDisco.CD);
+            Disco cd4 = new Disco("Blackout", EGenero.Pop, 2007, "Britney Spears", ETipoArtista.Solista, 500, ETipoDisco.CD);
+            Disco cd5 = new Disco("Electric lady", EGenero.Rock, 1969, "Jimi Hendrix", ETipoArtista.Solista, 500, ETipoDisco.CD);
 
             ///Creo clientes
             Cliente c1 = new Cliente("Juan", ESexo.Hombre, 15);
@@ -38,7 +39,7 @@ namespace PruebaEntidades
 
             try
             {
-                CD cd6 = new CD("Anoche", EGenero.Rock, 1800, "Babasonicos", ETipoArtista.Banda, 500); //Año es invalido
+                Disco cd6 = new Disco("Anoche", EGenero.Rock, 1800, "Babasonicos", ETipoArtista.Banda, 500, ETipoDisco.CD); //Año es invalido
             }
             catch (AñoInvalidoException e)
             {
@@ -48,7 +49,7 @@ namespace PruebaEntidades
 
             try
             {
-                CD cd7 = new CD("Anoche", EGenero.Rock, 1996, "Babasonicos", ETipoArtista.Banda, -6); //Precio es invalido
+                Disco cd7 = new Disco("Anoche", EGenero.Rock, 1996, "Babasonicos", ETipoArtista.Banda, -6, ETipoDisco.CD); //Precio es invalido
             }
             catch (PrecioInvalidoException e)
             {
@@ -116,32 +117,7 @@ namespace PruebaEntidades
 
             //Muestro stock y ventas
             Console.WriteLine(Tienda<Disco>.Mostrar(disqueria, ETipoMostrar.Todos));
-
-
-            try
-            {
-                Tienda<Disco>.Guardar(disqueria, "ArchivoPruebaConsola.xml"); //Guardo el archivo
-                Console.WriteLine("Archivo guardado.");
-            }
-            catch (ErrorArchivoException e)
-            {
-                Console.WriteLine(e.Message);
-            }
-
-            Tienda<Disco> disqueria2;
-
-
-            try
-            {
-                disqueria2 = Tienda<Disco>.Leer("ArchivosPrueba.xml"); //Leo el archivo guardado y muestro sus ventas
-                Console.WriteLine("Se leyo");
-                Console.WriteLine(Tienda<Disco>.Mostrar(disqueria2, ETipoMostrar.Vendidos));
-            }
-            catch (ErrorArchivoException e)
-            {
-                Console.WriteLine(e.Message);
-            }
-
+            
             Console.ReadKey();
         }
     }

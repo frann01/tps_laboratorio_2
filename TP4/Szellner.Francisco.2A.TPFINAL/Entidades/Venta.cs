@@ -65,7 +65,6 @@ namespace Entidades
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine("ID: " + this.id);
             sb.AppendLine("Cliente: ");
             sb.Append(this.cliente.ToString() + " - ");
             sb.AppendLine("Disco - ");
