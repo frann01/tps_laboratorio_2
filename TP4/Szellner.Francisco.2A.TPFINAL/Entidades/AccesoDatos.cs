@@ -29,7 +29,6 @@ namespace Entidades
 
                 conexion.Open();
                 SqlDataReader sqlReader = comando.ExecuteReader();
-                //uType = (EType) Enum.Parse(typeof(EType), row["userType"].ToString(), true);
                 
                 while (sqlReader.Read())
                 {

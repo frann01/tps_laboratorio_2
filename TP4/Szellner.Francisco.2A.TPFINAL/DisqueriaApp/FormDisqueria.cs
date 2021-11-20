@@ -125,7 +125,6 @@ namespace DisqueriaApp
 
         private void btn_Guardar_Click(object sender, EventArgs e)
         {
-            //GuardarForm frm = new GuardarForm(this.disqueria);
             try 
             {
                 Tienda<Disco>.Guardar(this.disqueria, "StockDisqueria.xml");
@@ -141,7 +140,7 @@ namespace DisqueriaApp
         {
             if(this.disqueria.VentasListado.Count > 0)
             {
-                InformesForm frm = new InformesForm(this.disqueria);
+                InformesForm frm = new InformesForm();
                 frm.ShowDialog();
             }
             else 

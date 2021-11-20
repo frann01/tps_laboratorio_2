@@ -31,153 +31,152 @@ namespace DisqueriaApp
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.lbl_GeneroMasComprado = new System.Windows.Forms.Label();
-            this.lblEdad = new System.Windows.Forms.Label();
-            this.lblSexo = new System.Windows.Forms.Label();
-            this.lblCantDiscos = new System.Windows.Forms.Label();
-            this.lblTipoDisco = new System.Windows.Forms.Label();
             this.btn_Aceptar = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.lblMenorGenero = new System.Windows.Forms.Label();
+            this.cboCriterio1 = new System.Windows.Forms.ComboBox();
+            this.cboCriterio2 = new System.Windows.Forms.ComboBox();
+            this.lstVentas = new System.Windows.Forms.ListBox();
+            this.lblResultado = new System.Windows.Forms.Label();
+            this.cbo1Btn2 = new System.Windows.Forms.ComboBox();
+            this.cbo2crit2 = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btn_Consulta2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 25);
+            this.label1.Location = new System.Drawing.Point(266, 40);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(163, 15);
+            this.label1.Size = new System.Drawing.Size(117, 15);
             this.label1.TabIndex = 0;
-            this.label1.Text = "- Se vendieron mas discos de ";
+            this.label1.Text = "mas comprado entre";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 51);
+            this.label2.Location = new System.Drawing.Point(51, 269);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(244, 15);
+            this.label2.Size = new System.Drawing.Size(0, 15);
             this.label2.TabIndex = 1;
-            this.label2.Text = "- El rango etario mas comun entre clientes es";
+            // 
+            // btn_Aceptar
+            // 
+            this.btn_Aceptar.Location = new System.Drawing.Point(553, 37);
+            this.btn_Aceptar.Name = "btn_Aceptar";
+            this.btn_Aceptar.Size = new System.Drawing.Size(86, 24);
+            this.btn_Aceptar.TabIndex = 10;
+            this.btn_Aceptar.Text = "Consultar";
+            this.btn_Aceptar.UseVisualStyleBackColor = true;
+            this.btn_Aceptar.Click += new System.EventHandler(this.btn_Aceptar_Click);
+            // 
+            // cboCriterio1
+            // 
+            this.cboCriterio1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCriterio1.FormattingEnabled = true;
+            this.cboCriterio1.Items.AddRange(new object[] {
+            "Genero",
+            "Tipo de disco",
+            "Decada"});
+            this.cboCriterio1.Location = new System.Drawing.Point(111, 38);
+            this.cboCriterio1.Name = "cboCriterio1";
+            this.cboCriterio1.Size = new System.Drawing.Size(149, 23);
+            this.cboCriterio1.TabIndex = 11;
+            // 
+            // cboCriterio2
+            // 
+            this.cboCriterio2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCriterio2.FormattingEnabled = true;
+            this.cboCriterio2.Items.AddRange(new object[] {
+            "Todos",
+            "Hombres",
+            "Mujeres",
+            "No binarios",
+            "Menores de 30",
+            "Mayores de 30"});
+            this.cboCriterio2.Location = new System.Drawing.Point(389, 37);
+            this.cboCriterio2.Name = "cboCriterio2";
+            this.cboCriterio2.Size = new System.Drawing.Size(158, 23);
+            this.cboCriterio2.TabIndex = 12;
+            // 
+            // lstVentas
+            // 
+            this.lstVentas.FormattingEnabled = true;
+            this.lstVentas.ItemHeight = 15;
+            this.lstVentas.Location = new System.Drawing.Point(12, 158);
+            this.lstVentas.Name = "lstVentas";
+            this.lstVentas.Size = new System.Drawing.Size(736, 289);
+            this.lstVentas.TabIndex = 13;
+            // 
+            // lblResultado
+            // 
+            this.lblResultado.AutoSize = true;
+            this.lblResultado.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblResultado.Location = new System.Drawing.Point(12, 123);
+            this.lblResultado.Name = "lblResultado";
+            this.lblResultado.Size = new System.Drawing.Size(97, 32);
+            this.lblResultado.TabIndex = 14;
+            this.lblResultado.Text = "";
+            // 
+            // cbo1Btn2
+            // 
+            this.cbo1Btn2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbo1Btn2.FormattingEnabled = true;
+            this.cbo1Btn2.Items.AddRange(new object[] {
+            "Sexo",
+            "Rango Etario"});
+            this.cbo1Btn2.Location = new System.Drawing.Point(111, 69);
+            this.cbo1Btn2.Name = "cbo1Btn2";
+            this.cbo1Btn2.Size = new System.Drawing.Size(149, 23);
+            this.cbo1Btn2.TabIndex = 15;
+            // 
+            // cbo2crit2
+            // 
+            this.cbo2crit2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbo2crit2.FormattingEnabled = true;
+            this.cbo2crit2.Items.AddRange(new object[] {
+            "Todos",
+            "Rock",
+            "Jazz",
+            "Pop",
+            "Experimental"});
+            this.cbo2crit2.Location = new System.Drawing.Point(389, 66);
+            this.cbo2crit2.Name = "cbo2crit2";
+            this.cbo2crit2.Size = new System.Drawing.Size(158, 23);
+            this.cbo2crit2.TabIndex = 16;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 78);
+            this.label3.Location = new System.Drawing.Point(277, 72);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(206, 15);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "- Las personas que mas compran son ";
+            this.label3.Size = new System.Drawing.Size(96, 15);
+            this.label3.TabIndex = 17;
+            this.label3.Text = "que mas compra";
             // 
-            // label4
+            // btn_Consulta2
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 100);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(86, 15);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "- Se vendieron ";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(12, 124);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(184, 15);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "- Se vendieron mas discos de tipo";
-            // 
-            // lbl_GeneroMasComprado
-            // 
-            this.lbl_GeneroMasComprado.AutoSize = true;
-            this.lbl_GeneroMasComprado.Location = new System.Drawing.Point(171, 25);
-            this.lbl_GeneroMasComprado.Name = "lbl_GeneroMasComprado";
-            this.lbl_GeneroMasComprado.Size = new System.Drawing.Size(38, 15);
-            this.lbl_GeneroMasComprado.TabIndex = 5;
-            this.lbl_GeneroMasComprado.Text = "label6";
-            // 
-            // lblEdad
-            // 
-            this.lblEdad.AutoSize = true;
-            this.lblEdad.Location = new System.Drawing.Point(262, 51);
-            this.lblEdad.Name = "lblEdad";
-            this.lblEdad.Size = new System.Drawing.Size(38, 15);
-            this.lblEdad.TabIndex = 6;
-            this.lblEdad.Text = "label7";
-            // 
-            // lblSexo
-            // 
-            this.lblSexo.AutoSize = true;
-            this.lblSexo.Location = new System.Drawing.Point(218, 78);
-            this.lblSexo.Name = "lblSexo";
-            this.lblSexo.Size = new System.Drawing.Size(38, 15);
-            this.lblSexo.TabIndex = 7;
-            this.lblSexo.Text = "label8";
-            // 
-            // lblCantDiscos
-            // 
-            this.lblCantDiscos.AutoSize = true;
-            this.lblCantDiscos.Location = new System.Drawing.Point(97, 100);
-            this.lblCantDiscos.Name = "lblCantDiscos";
-            this.lblCantDiscos.Size = new System.Drawing.Size(38, 15);
-            this.lblCantDiscos.TabIndex = 8;
-            this.lblCantDiscos.Text = "label9";
-            // 
-            // lblTipoDisco
-            // 
-            this.lblTipoDisco.AutoSize = true;
-            this.lblTipoDisco.Location = new System.Drawing.Point(198, 124);
-            this.lblTipoDisco.Name = "lblTipoDisco";
-            this.lblTipoDisco.Size = new System.Drawing.Size(44, 15);
-            this.lblTipoDisco.TabIndex = 9;
-            this.lblTipoDisco.Text = "label10";
-            // 
-            // btn_Aceptar
-            // 
-            this.btn_Aceptar.Location = new System.Drawing.Point(169, 192);
-            this.btn_Aceptar.Name = "btn_Aceptar";
-            this.btn_Aceptar.Size = new System.Drawing.Size(159, 51);
-            this.btn_Aceptar.TabIndex = 10;
-            this.btn_Aceptar.Text = "Aceptar";
-            this.btn_Aceptar.UseVisualStyleBackColor = true;
-            this.btn_Aceptar.Click += new System.EventHandler(this.btn_Aceptar_Click);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(12, 152);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(266, 15);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "- Los generos que vendieron menor cantidad son";
-            // 
-            // lblMenorGenero
-            // 
-            this.lblMenorGenero.AutoSize = true;
-            this.lblMenorGenero.Location = new System.Drawing.Point(284, 152);
-            this.lblMenorGenero.Name = "lblMenorGenero";
-            this.lblMenorGenero.Size = new System.Drawing.Size(44, 15);
-            this.lblMenorGenero.TabIndex = 12;
-            this.lblMenorGenero.Text = "label10";
+            this.btn_Consulta2.Location = new System.Drawing.Point(553, 65);
+            this.btn_Consulta2.Name = "btn_Consulta2";
+            this.btn_Consulta2.Size = new System.Drawing.Size(86, 24);
+            this.btn_Consulta2.TabIndex = 18;
+            this.btn_Consulta2.Text = "Consultar";
+            this.btn_Consulta2.UseVisualStyleBackColor = true;
+            this.btn_Consulta2.Click += new System.EventHandler(this.btn_Consulta2_Click);
             // 
             // InformesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(479, 255);
-            this.Controls.Add(this.lblMenorGenero);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.btn_Aceptar);
-            this.Controls.Add(this.lblTipoDisco);
-            this.Controls.Add(this.lblCantDiscos);
-            this.Controls.Add(this.lblSexo);
-            this.Controls.Add(this.lblEdad);
-            this.Controls.Add(this.lbl_GeneroMasComprado);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
+            this.ClientSize = new System.Drawing.Size(760, 459);
+            this.Controls.Add(this.btn_Consulta2);
             this.Controls.Add(this.label3);
+            this.Controls.Add(this.cbo2crit2);
+            this.Controls.Add(this.cbo1Btn2);
+            this.Controls.Add(this.lblResultado);
+            this.Controls.Add(this.lstVentas);
+            this.Controls.Add(this.cboCriterio2);
+            this.Controls.Add(this.cboCriterio1);
+            this.Controls.Add(this.btn_Aceptar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "InformesForm";
@@ -191,16 +190,14 @@ namespace DisqueriaApp
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label lbl_GeneroMasComprado;
-        private System.Windows.Forms.Label lblEdad;
-        private System.Windows.Forms.Label lblCantDiscos;
-        private System.Windows.Forms.Label lblTipoDisco;
         private System.Windows.Forms.Button btn_Aceptar;
-        private System.Windows.Forms.Label lblSexo;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label lblMenorGenero;
+        private System.Windows.Forms.ComboBox cboCriterio1;
+        private System.Windows.Forms.ComboBox cboCriterio2;
+        private System.Windows.Forms.ListBox lstVentas;
+        private System.Windows.Forms.Label lblResultado;
+        private System.Windows.Forms.ComboBox cbo1Btn2;
+        private System.Windows.Forms.ComboBox cbo2crit2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btn_Consulta2;
     }
 }

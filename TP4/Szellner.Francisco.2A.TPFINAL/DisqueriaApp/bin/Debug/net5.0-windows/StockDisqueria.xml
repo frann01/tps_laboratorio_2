@@ -44,4 +44,15 @@
     </Artista>
     <Titulo>A love supreme</Titulo>
   </Disco>
+  <Disco>
+    <Precio>950</Precio>
+    <TipoDIsco>CD</TipoDIsco>
+    <Año>2012</Año>
+    <Genero>Experimental</Genero>
+    <Artista>
+      <Nombre>Death Grips</Nombre>
+      <Tipo>Banda</Tipo>
+    </Artista>
+    <Titulo>The money store</Titulo>
+  </Disco>
 </ArrayOfDisco>
