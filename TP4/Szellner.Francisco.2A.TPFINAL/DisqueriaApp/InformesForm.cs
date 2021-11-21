@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Entidades;
+using Excepciones;
 
 namespace DisqueriaApp
 {
@@ -63,7 +64,7 @@ namespace DisqueriaApp
             }
             catch (Exception ex)
             {
-                throw new Exception("Error al tratar de obtener las ventas de la base de datos", ex);
+                throw new ErrorArchivoException("Error al tratar de obtener las ventas de la base de datos", ex);
             }
             finally
             {
@@ -156,10 +157,6 @@ namespace DisqueriaApp
             }
             return retorno;
         }
-
-
-
-
 
         #region Funciones Informes
 
@@ -473,39 +470,62 @@ namespace DisqueriaApp
 
         private void btn_Aceptar_Click(object sender, EventArgs e)
         {
-            this.VentasDelForm = this.ObtenerLista(GenerarQuery());
-            this.lstVentas.Items.Clear();
-            switch (this.cboCriterio1.SelectedItem)
+            try 
             {
-                case "Genero":
-                    obtenerGeneroMasComprado();
-                    break;
+                this.VentasDelForm = this.ObtenerLista(GenerarQuery());
+                this.lstVentas.Items.Clear();
+                switch (this.cboCriterio1.SelectedItem)
+                {
+                    case "Genero":
+                        obtenerGeneroMasComprado();
+                        break;
 
-                case "Tipo de disco":
-                    ObtenerTipoDisco();
-                    break;
+                    case "Tipo de disco":
+                        ObtenerTipoDisco();
+                        break;
 
-                case "Decada":
-                    obtenerDecada();
-                    break;
+                    case "Decada":
+                        obtenerDecada();
+                        break;
+                }
+            }
+            catch (ErrorArchivoException ex) 
+            {
+                MessageBox.Show(ex.Message, "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Hubo un error!", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
         private void btn_Consulta2_Click(object sender, EventArgs e)
         {
-            this.VentasDelForm = this.ObtenerLista(GenerarQuery2());
-            this.lstVentas.Items.Clear();
-            switch (this.cbo1Btn2.SelectedItem)
+            try 
             {
-                case "Sexo":
-                    obtenerSexoQueMasCompro();
-                    break;
+                this.VentasDelForm = this.ObtenerLista(GenerarQuery2());
+                this.lstVentas.Items.Clear();
+                switch (this.cbo1Btn2.SelectedItem)
+                {
+                    case "Sexo":
+                        obtenerSexoQueMasCompro();
+                        break;
 
-                case "Rango Etario":
-                    ObtenerEdadQueMasCompro();
-                    break;
+                    case "Rango Etario":
+                        ObtenerEdadQueMasCompro();
+                        break;
 
+                }
             }
+            catch (ErrorArchivoException ex) 
+            {
+                MessageBox.Show(ex.Message, "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception) 
+            {
+                MessageBox.Show("Hubo un error!", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            
         }
     }
 }

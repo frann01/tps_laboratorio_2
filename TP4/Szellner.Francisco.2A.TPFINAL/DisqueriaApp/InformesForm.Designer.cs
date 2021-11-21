@@ -100,6 +100,7 @@ namespace DisqueriaApp
             // 
             // lstVentas
             // 
+            this.lstVentas.BackColor = System.Drawing.Color.LightSteelBlue;
             this.lstVentas.FormattingEnabled = true;
             this.lstVentas.ItemHeight = 15;
             this.lstVentas.Location = new System.Drawing.Point(12, 158);
@@ -113,9 +114,9 @@ namespace DisqueriaApp
             this.lblResultado.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblResultado.Location = new System.Drawing.Point(12, 123);
             this.lblResultado.Name = "lblResultado";
-            this.lblResultado.Size = new System.Drawing.Size(97, 32);
+            this.lblResultado.Size = new System.Drawing.Size(0, 32);
             this.lblResultado.TabIndex = 14;
-            this.lblResultado.Text = "";
+            this.lblResultado.Text = "Informes";
             // 
             // cbo1Btn2
             // 

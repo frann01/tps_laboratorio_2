@@ -12,7 +12,7 @@ namespace PruebaEntidades
             
             //Creo Discos
             Disco v1 = new Disco("Clics Modernos", EGenero.Rock, 1983, "Charly Garcia", ETipoArtista.Solista, 500, ETipoDisco.Vinilo);
-            Disco v2 = new Disco("Clics Modernos", EGenero.Rock, 1983, "Charly Garcia", ETipoArtista.Solista, 500, ETipoDisco.Vinilo);
+            Disco v2 = new Disco("Pubis angelical", EGenero.Rock, 1982, "Charly Garcia", ETipoArtista.Solista, 700, ETipoDisco.Vinilo);
             Disco v3 = new Disco("A love Supreme", EGenero.Jazz, 1964, "John Coltrane", ETipoArtista.Solista,  500, ETipoDisco.Vinilo);
             Disco v4 = new Disco("Loveless", EGenero.Rock, 1983, "My bloody valentine", ETipoArtista.Banda, 500, ETipoDisco.Vinilo);
 
@@ -68,6 +68,7 @@ namespace PruebaEntidades
 
             //Creo disqueria
             Tienda<Disco> disqueria = new Tienda<Disco>(6);
+            disqueria.VentaNueva += MostrarEvento;
 
             disqueria += v1;
             disqueria += v2;
@@ -115,10 +116,15 @@ namespace PruebaEntidades
                 Console.WriteLine(e.Message);
             }
 
-            //Muestro stock y ventas
-            Console.WriteLine(Tienda<Disco>.Mostrar(disqueria, ETipoMostrar.Todos));
+            //Muestro stock
+            Console.WriteLine(Tienda<Disco>.Mostrar(disqueria, ETipoMostrar.Stock));
             
             Console.ReadKey();
+        }
+
+        public static void MostrarEvento(Venta v) 
+        {
+            Console.WriteLine("Se vendio el disco " + v.DiscoVendido.Titulo);
         }
     }
 }

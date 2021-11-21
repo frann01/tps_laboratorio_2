@@ -7,6 +7,9 @@ using Excepciones;
 
 namespace Entidades
 {
+    /// <summary>
+    /// Metodos de extension
+    /// </summary>
     public static class ExtensionDisco
     {
         /// <summary>

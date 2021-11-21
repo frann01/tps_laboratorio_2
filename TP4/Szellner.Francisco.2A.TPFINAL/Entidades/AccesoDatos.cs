@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
+    /// <summary>
+    /// Acceso a base de datos y Sql
+    /// </summary>
     public class AccesoDatos
     {
         public static SqlConnection conexion;
@@ -19,6 +22,10 @@ namespace Entidades
             AccesoDatos.comando.Connection = AccesoDatos.conexion;
         }
 
+        /// <summary>
+        /// Obtiene la lista completa de ventas de la base de datos
+        /// </summary>
+        /// <returns></returns>
         public static List<Venta> ObtenerListaVentas()
         {
             List<Venta> ventas = new List<Venta>();
@@ -67,7 +74,11 @@ namespace Entidades
             return ventas;
         }
 
-
+        /// <summary>
+        /// Agrega una venta a la base de datos
+        /// </summary>
+        /// <param name="v"></param>
+        /// <returns></returns>
         public static bool AgregarVenta(Venta v)
         {
             bool retorno = false;
@@ -95,7 +106,11 @@ namespace Entidades
             return retorno;
         }
 
-
+        /// <summary>
+        /// Modifica una venta de la base de datos
+        /// </summary>
+        /// <param name="v"></param>
+        /// <returns></returns>
         public static bool ModificarVenta(Venta v)
         {
             bool retorno = false;
@@ -124,6 +139,11 @@ namespace Entidades
             return retorno;
         }
 
+        /// <summary>
+        /// Elimina una venta de la base de datos
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public static bool EliminarVenta(int id)
         {
             bool retorno = false;

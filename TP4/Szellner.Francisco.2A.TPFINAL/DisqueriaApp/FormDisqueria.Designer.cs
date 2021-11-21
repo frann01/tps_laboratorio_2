@@ -127,7 +127,7 @@ namespace DisqueriaApp
             this.lstVendidos.ItemHeight = 15;
             this.lstVendidos.Location = new System.Drawing.Point(6, 325);
             this.lstVendidos.Name = "lstVendidos";
-            this.lstVendidos.Size = new System.Drawing.Size(795, 229);
+            this.lstVendidos.Size = new System.Drawing.Size(795, 244);
             this.lstVendidos.TabIndex = 7;
             // 
             // btn_Vender
@@ -177,7 +177,7 @@ namespace DisqueriaApp
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
-            this.ClientSize = new System.Drawing.Size(1012, 562);
+            this.ClientSize = new System.Drawing.Size(1012, 579);
             this.Controls.Add(this.brn_Eliminar_Disco);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -191,6 +191,8 @@ namespace DisqueriaApp
             this.Controls.Add(this.btn_Guardar);
             this.Controls.Add(this.lstStock);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "FormDisqueria";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Disqueria";

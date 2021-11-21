@@ -8,8 +8,16 @@ using Excepciones;
 
 namespace Entidades
 {
+    /// <summary>
+    /// Metodos de extension
+    /// </summary>
     public static class ExtensionTienda
     {
+        /// <summary>
+        /// Guarda la ganancia de la tienda en un archivo de texto
+        /// </summary>
+        /// <param name="t"></param>
+        /// <returns></returns>
         public static bool GuardarGanacia(this Tienda<Disco> t)
         {
             bool sePudoGuadar = false;
@@ -32,6 +40,11 @@ namespace Entidades
             return sePudoGuadar;
         }
 
+        /// <summary>
+        /// Carga la ganancia de un archivo de texto
+        /// </summary>
+        /// <param name="t"></param>
+        /// <returns></returns>
         public static bool CargarGanacia(this Tienda<Disco> t)
         {
             bool sePudoLeer = false;

@@ -8,7 +8,7 @@ namespace Excepciones
 {
     public class ErrorArchivoException : Exception
     {
-        static string Mensaje = "Hubo un error cohn el archivo!";
+        static string Mensaje = "Hubo un error con el archivo!";
         public ErrorArchivoException() : base(Mensaje)
         {
         }

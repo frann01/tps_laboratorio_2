@@ -228,7 +228,7 @@ namespace Entidades
 
             foreach (T item in b.stock)
             {
-                if (item.Equals(l))
+                if (item == l)
                 {
                     rta = true;
                     break;

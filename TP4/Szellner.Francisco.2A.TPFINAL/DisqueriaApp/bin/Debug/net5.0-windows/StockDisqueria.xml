@@ -1,28 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ArrayOfDisco xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Disco>
-    <Precio>700</Precio>
-    <TipoDIsco>Vinilo</TipoDIsco>
-    <Año>1983</Año>
-    <Genero>Rock</Genero>
-    <Artista>
-      <Nombre>Charly Garcia</Nombre>
-      <Tipo>Solista</Tipo>
-    </Artista>
-    <Titulo>Clics Modernos</Titulo>
-  </Disco>
-  <Disco>
-    <Precio>600</Precio>
-    <TipoDIsco>CD</TipoDIsco>
-    <Año>2017</Año>
-    <Genero>Rock</Genero>
-    <Artista>
-      <Nombre>King Krule</Nombre>
-      <Tipo>Solista</Tipo>
-    </Artista>
-    <Titulo>The Ooz</Titulo>
-  </Disco>
-  <Disco>
     <Precio>1000</Precio>
     <TipoDIsco>CD</TipoDIsco>
     <Año>1991</Año>
@@ -54,5 +32,60 @@
       <Tipo>Banda</Tipo>
     </Artista>
     <Titulo>The money store</Titulo>
+  </Disco>
+  <Disco>
+    <Precio>600</Precio>
+    <TipoDIsco>CD</TipoDIsco>
+    <Año>2012</Año>
+    <Genero>Rock</Genero>
+    <Artista>
+      <Nombre>Alex G</Nombre>
+      <Tipo>Solista</Tipo>
+    </Artista>
+    <Titulo>Trick</Titulo>
+  </Disco>
+  <Disco>
+    <Precio>1250</Precio>
+    <TipoDIsco>Vinilo</TipoDIsco>
+    <Año>1959</Año>
+    <Genero>Jazz</Genero>
+    <Artista>
+      <Nombre>Miles Davis</Nombre>
+      <Tipo>Solista</Tipo>
+    </Artista>
+    <Titulo>Kind of Blue</Titulo>
+  </Disco>
+  <Disco>
+    <Precio>1300</Precio>
+    <TipoDIsco>Vinilo</TipoDIsco>
+    <Año>1996</Año>
+    <Genero>Experimental</Genero>
+    <Artista>
+      <Nombre>DJ Shadow</Nombre>
+      <Tipo>Solista</Tipo>
+    </Artista>
+    <Titulo>Endtroducing...</Titulo>
+  </Disco>
+  <Disco>
+    <Precio>650</Precio>
+    <TipoDIsco>Vinilo</TipoDIsco>
+    <Año>1969</Año>
+    <Genero>Pop</Genero>
+    <Artista>
+      <Nombre>The Beach Boys</Nombre>
+      <Tipo>Banda</Tipo>
+    </Artista>
+    <Titulo>Pet Sounds</Titulo>
+  </Disco>
+  <Disco>
+    <Precio>850</Precio>
+    <TipoDIsco>CD</TipoDIsco>
+    <Año>2007</Año>
+    <Genero>Pop</Genero>
+    <Artista>
+      <Nombre>Britney Spears</Nombre>
+      <Tipo>Solista</Tipo>
+    </Artista>
+    <Titulo>Blackout</Titulo>
   </Disco>
 </ArrayOfDisco>

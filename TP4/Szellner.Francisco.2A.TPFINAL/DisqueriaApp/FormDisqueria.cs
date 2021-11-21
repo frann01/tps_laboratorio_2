@@ -16,25 +16,58 @@ namespace DisqueriaApp
     {
         private Tienda<Disco> disqueria;
 
+        /// <summary>
+        /// Carga distintos componentes del Form
+        /// el hilo tCargarStock carga el stock utilizando el metodo cargarStock
+        /// Uso de hilos
+        /// </summary>
         public FormDisqueria()
         {
             InitializeComponent();
-            Task tCargarVentas = new Task(cargarVentas);
-            this.disqueria = new Tienda<Disco>(200);
-            this.disqueria.CargarGanacia();
+            try
+            {
+                Task tCargarStock = new Task(cargarStock);
+                this.disqueria = new Tienda<Disco>(200);
+                this.disqueria.CargarGanacia();
 
-            this.disqueria.VentaNueva += MostrarDiscoVendido;
-            tCargarVentas.RunSynchronously();
-            this.disqueria.VentasListado = AccesoDatos.ObtenerListaVentas();
+                this.disqueria.VentaNueva += MostrarDiscoVendido;
+                tCargarStock.RunSynchronously();
+                this.disqueria.VentasListado = AccesoDatos.ObtenerListaVentas();
 
-            this.txtGanancia.Text = string.Format("{0:C}", this.disqueria.Ganacia);
-            this.ActualizarListadoStock();
-            this.ActualizarListadoVendidos();
+                this.txtGanancia.Text = string.Format("{0:C}", this.disqueria.Ganacia);
+                this.ActualizarListadoStock();
+                this.ActualizarListadoVendidos();
+            }
+            catch(ErrorArchivoException ex) 
+            {
+                MessageBox.Show(ex.Message, "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch(Exception) 
+            {
+                MessageBox.Show("Hubo un error inicializando la Tienda", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            
         }
 
-        private void cargarVentas() 
+        /// <summary>
+        /// Carga el stock desde un archivo xml fijo
+        /// Uso de Serializacion
+        /// </summary>
+        private void cargarStock() 
         {
-            this.disqueria.StockListado = Tienda<Disco>.Leer("StockDisqueria.xml");
+            try 
+            {
+                this.disqueria.StockListado = Tienda<Disco>.Leer("StockDisqueria.xml");
+            }
+            catch (ErrorArchivoException excep) 
+            {
+                MessageBox.Show(excep.Message, "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception) 
+            {
+                MessageBox.Show("Hubo un error!", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            
         }
 
         public Tienda<Disco> Disqueria 
@@ -47,6 +80,12 @@ namespace DisqueriaApp
         }
 
         #region Funciones
+
+        /// <summary>
+        /// Llama al form para cargar un nuevo disco
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btn_NuevoVinilo_Click(object sender, EventArgs e)
         {
             FormDisco frm = new FormDisco();
@@ -67,7 +106,13 @@ namespace DisqueriaApp
             }
         }
 
-
+        /// <summary>
+        /// Llama el form NuevaVenta para vender el disco seleccionado 
+        /// Al llamar al metodo vender se invoke el evento VentaNueva
+        /// Esta usando el metodo MostrarDiscoVendido Muestra los datos de la venta en un MessageBox
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btn_Vender_Click(object sender, EventArgs e)
         {
             if (this.lstStock.SelectedItem != null)
@@ -93,6 +138,10 @@ namespace DisqueriaApp
             }
         }
 
+        /// <summary>
+        /// Muestra los datos de una venta
+        /// </summary>
+        /// <param name="venta"></param>
         private void MostrarDiscoVendido(Venta venta) 
         {
             string texto = "Se ha vendido el disco " + venta.DiscoVendido.Titulo + " a " + venta.Cliente.Nombre + " por " + venta.DiscoVendido.Precio + " pesos!";
@@ -112,6 +161,9 @@ namespace DisqueriaApp
             }
         }
 
+        /// <summary>
+        /// Actualiza el listbox de ventas
+        /// </summary>
         private void ActualizarListadoVendidos()
         {
             this.lstVendidos.Items.Clear();
@@ -123,6 +175,12 @@ namespace DisqueriaApp
             }
         }
 
+        /// <summary>
+        /// Guarda el stock en un archivo fijo
+        /// Serializacion
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btn_Guardar_Click(object sender, EventArgs e)
         {
             try 
@@ -136,6 +194,11 @@ namespace DisqueriaApp
             }
         }
 
+        /// <summary>
+        /// Llama al frmulario informes
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btn_informes_Click(object sender, EventArgs e)
         {
             if(this.disqueria.VentasListado.Count > 0)
@@ -151,6 +214,11 @@ namespace DisqueriaApp
 
         #endregion
 
+        /// <summary>
+        /// Elimina el disco seleccionado del stock
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void brn_Eliminar_Disco_Click(object sender, EventArgs e)
         {
             if (this.lstStock.SelectedItem != null)
@@ -170,7 +238,11 @@ namespace DisqueriaApp
                 MessageBox.Show("Por favor seleccione un disco disponible!", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
-
+        /// <summary>
+        /// Guarda la ganancia ants de que se cierre el form
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FormDisqueria_FormClosing(object sender, FormClosingEventArgs e)
         {
             this.disqueria.GuardarGanacia();
