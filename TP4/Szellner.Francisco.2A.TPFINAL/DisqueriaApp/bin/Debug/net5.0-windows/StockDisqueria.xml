@@ -1,17 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ArrayOfDisco xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Disco>
-    <Precio>1000</Precio>
-    <TipoDIsco>CD</TipoDIsco>
-    <Año>1991</Año>
-    <Genero>Experimental</Genero>
-    <Artista>
-      <Nombre>MBV</Nombre>
-      <Tipo>Banda</Tipo>
-    </Artista>
-    <Titulo>Loveless</Titulo>
-  </Disco>
-  <Disco>
     <Precio>1500</Precio>
     <TipoDIsco>Vinilo</TipoDIsco>
     <Año>1964</Año>
@@ -45,17 +34,6 @@
     <Titulo>Trick</Titulo>
   </Disco>
   <Disco>
-    <Precio>1250</Precio>
-    <TipoDIsco>Vinilo</TipoDIsco>
-    <Año>1959</Año>
-    <Genero>Jazz</Genero>
-    <Artista>
-      <Nombre>Miles Davis</Nombre>
-      <Tipo>Solista</Tipo>
-    </Artista>
-    <Titulo>Kind of Blue</Titulo>
-  </Disco>
-  <Disco>
     <Precio>1300</Precio>
     <TipoDIsco>Vinilo</TipoDIsco>
     <Año>1996</Año>
@@ -87,5 +65,38 @@
       <Tipo>Solista</Tipo>
     </Artista>
     <Titulo>Blackout</Titulo>
+  </Disco>
+  <Disco>
+    <Precio>950</Precio>
+    <TipoDIsco>CD</TipoDIsco>
+    <Año>2003</Año>
+    <Genero>Experimental</Genero>
+    <Artista>
+      <Nombre>Sweet trip</Nombre>
+      <Tipo>Banda</Tipo>
+    </Artista>
+    <Titulo>V : D : C</Titulo>
+  </Disco>
+  <Disco>
+    <Precio>1899</Precio>
+    <TipoDIsco>Vinilo</TipoDIsco>
+    <Año>1996</Año>
+    <Genero>Rock</Genero>
+    <Artista>
+      <Nombre>Fishmans</Nombre>
+      <Tipo>Banda</Tipo>
+    </Artista>
+    <Titulo>Long Season</Titulo>
+  </Disco>
+  <Disco>
+    <Precio>1200</Precio>
+    <TipoDIsco>Vinilo</TipoDIsco>
+    <Año>1969</Año>
+    <Genero>Jazz</Genero>
+    <Artista>
+      <Nombre>Frank Zappa</Nombre>
+      <Tipo>Solista</Tipo>
+    </Artista>
+    <Titulo>Hot Rats</Titulo>
   </Disco>
 </ArrayOfDisco>

@@ -123,7 +123,6 @@ namespace Entidades
 
         #endregion
 
-
         #region Funciones
 
         /// <summary>

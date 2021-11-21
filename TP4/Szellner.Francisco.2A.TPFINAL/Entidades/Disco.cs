@@ -15,6 +15,7 @@ namespace Entidades
         protected float precio;
 
         #region Constructores
+
         protected Disco() { }
         public Disco(string titulo, EGenero genero, int año, Artista artista, float precio, ETipoDisco tipo) 
         {
@@ -105,7 +106,7 @@ namespace Entidades
             sb.AppendLine("Artista: " + (string)l.artista + " - ");
             sb.AppendLine("Genero: " + l.genero + " - ");
             sb.AppendLine("Año: " + l.año + " - ");
-            sb.AppendLine("Precio: " + l.precio + " - ");
+            sb.AppendLine("Precio: " + l.precio);
 
             return sb.ToString();
         }

@@ -29,6 +29,7 @@ namespace DisqueriaApp
             comando.Connection = conexion;
         }
 
+        #region Funciones Generales
         public List<Venta> ObtenerLista(string query)
         {
             List<Venta> ventas = new List<Venta>();
@@ -158,6 +159,8 @@ namespace DisqueriaApp
             return retorno;
         }
 
+        #endregion
+
         #region Funciones Informes
 
         private void obtenerDecada()
@@ -177,6 +180,7 @@ namespace DisqueriaApp
             if (todosIguales(cantidades))
             {
                 this.lblResultado.Text = "Se vendio la misma cantidad de todas las decadas, " + mayor + " discos";
+                this.ActualizarLista(this.VentasDelForm);
             }
             else
             {
@@ -233,6 +237,7 @@ namespace DisqueriaApp
             if (cantCD == cantVinilo)
             {
                 this.lblResultado.Text = "Se vendio la misma cantidad, " + cantCD + " discos";
+                this.ActualizarLista(this.VentasDelForm);
             }
             else
             {
@@ -260,6 +265,7 @@ namespace DisqueriaApp
             if (cantPlus == cantMinus)
             {
                 this.lblResultado.Text = "Se vendio la misma cantidad entre ambos rangos etarios, " + cantPlus + " discos";
+                this.ActualizarLista(this.VentasDelForm);
             }
             else
             {
@@ -290,6 +296,7 @@ namespace DisqueriaApp
             if(todosIguales(cantidades)) 
             {
                 this.lblResultado.Text = "Se vendio la misma cantidad de todos los generos, " + mayor +" discos";
+                this.ActualizarLista(this.VentasDelForm);
             }
             else 
             {
@@ -336,6 +343,7 @@ namespace DisqueriaApp
             if (todosIguales(cantidades))
             {
                 this.lblResultado.Text = "Los 3 sexos compraron la misma cantidad " + mayor + " discos";
+                this.ActualizarLista(this.VentasDelForm);
             }
             else
             {
