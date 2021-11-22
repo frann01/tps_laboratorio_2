@@ -1,17 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ArrayOfDisco xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Disco>
-    <Precio>1500</Precio>
-    <TipoDIsco>Vinilo</TipoDIsco>
-    <Año>1964</Año>
-    <Genero>Jazz</Genero>
-    <Artista>
-      <Nombre>John Coltrane</Nombre>
-      <Tipo>Solista</Tipo>
-    </Artista>
-    <Titulo>A love supreme</Titulo>
-  </Disco>
-  <Disco>
     <Precio>950</Precio>
     <TipoDIsco>CD</TipoDIsco>
     <Año>2012</Año>
@@ -98,5 +87,27 @@
       <Tipo>Solista</Tipo>
     </Artista>
     <Titulo>Hot Rats</Titulo>
+  </Disco>
+  <Disco>
+    <Precio>700</Precio>
+    <TipoDIsco>Vinilo</TipoDIsco>
+    <Año>1971</Año>
+    <Genero>Pop</Genero>
+    <Artista>
+      <Nombre>The Beach Boys</Nombre>
+      <Tipo>Banda</Tipo>
+    </Artista>
+    <Titulo>Surfs Up</Titulo>
+  </Disco>
+  <Disco>
+    <Precio>780</Precio>
+    <TipoDIsco>CD</TipoDIsco>
+    <Año>1996</Año>
+    <Genero>Rock</Genero>
+    <Artista>
+      <Nombre>Elliott Smith</Nombre>
+      <Tipo>Solista</Tipo>
+    </Artista>
+    <Titulo>Either/Or</Titulo>
   </Disco>
 </ArrayOfDisco>

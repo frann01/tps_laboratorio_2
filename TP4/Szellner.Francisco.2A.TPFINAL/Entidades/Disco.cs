@@ -121,7 +121,7 @@ namespace Entidades
         }
 
         /// <summary>
-        /// Compara que dos discos tenga el mismo titulo y artista
+        /// Compara que dos discos tenga el mismo titulo, artista y tipo
         /// </summary>
         /// <param name="b1"></param>
         /// <param name="b2"></param>

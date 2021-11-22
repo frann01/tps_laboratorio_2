@@ -126,7 +126,7 @@ namespace Entidades
         #region Funciones
 
         /// <summary>
-        /// Al vender un disco lo elimina de la lista de stock, crea una nueva instancia de venta y lo agrega a la lista de ventas
+        /// Al vender un disco crea una nueva instancia de venta y lo agrega a la lista de ventas
         /// junto con el cliente
         /// </summary>
         /// <param name="tienda"></param>
