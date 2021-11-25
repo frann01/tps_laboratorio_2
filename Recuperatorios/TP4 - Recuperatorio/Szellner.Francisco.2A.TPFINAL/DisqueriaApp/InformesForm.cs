@@ -32,7 +32,7 @@ namespace DisqueriaApp
             obtenerGeneroMenosComprado();
             ObtenerPorcentajeVinilo();
             RangoEtario();
-            obtenerSexoQueMasCompro();
+            PorcentajesSexo();
             promedioPrecio();
         }
 
@@ -429,6 +429,19 @@ namespace DisqueriaApp
             
         }
 
+        private void PorcentajesSexo() 
+        {
+            List<Venta> vHombre = this.VentasDelForm.FindAll(esHombre);
+            List<Venta> vMujer = this.VentasDelForm.FindAll(esMujer);
+            List<Venta> vNoBinario = this.VentasDelForm.FindAll(esBinario);
+
+            int pHombre = (vHombre.Count * 100) / this.VentasDelForm.Count;
+            int pMujer = (vMujer.Count * 100) / this.VentasDelForm.Count;
+            int pNoBinario = (vNoBinario.Count * 100) / this.VentasDelForm.Count;
+
+            this.label14.Text = pHombre + "%, " + pMujer + "% y " + pNoBinario + "%";
+        }
+
         private void obtenerSexoQueMasCompro()
         {
             string mostrarMayor = "";
@@ -440,11 +453,7 @@ namespace DisqueriaApp
 
             int mayor = cantidades.Max();
 
-            int pHombre = (vHombre.Count*100)/this.VentasDelForm.Count;
-            int pMujer = (vMujer.Count * 100) / this.VentasDelForm.Count;
-            int pNoBinario = (vNoBinario.Count * 100) / this.VentasDelForm.Count;
-
-            this.label14.Text = pHombre + "%, " + pMujer + "% y " + pNoBinario + "%";
+            
 
             if (todosIguales(cantidades))
             {
