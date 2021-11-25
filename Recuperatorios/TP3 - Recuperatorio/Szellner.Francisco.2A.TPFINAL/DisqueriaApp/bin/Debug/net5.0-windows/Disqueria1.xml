@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TiendaOfDisco xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <StockListado>
+    <Disco xsi:type="Vinilo">
+      <Precio>750</Precio>
+      <Año>1977</Año>
+      <Genero>Rock</Genero>
+      <Artista>
+        <Nombre>La maquina</Nombre>
+        <Tipo>Banda</Tipo>
+      </Artista>
+      <Titulo>Peliculas</Titulo>
+      <Condicion>Usado</Condicion>
+    </Disco>
+    <Disco xsi:type="CD">
+      <Precio>800</Precio>
+      <Año>1997</Año>
+      <Genero>Rock</Genero>
+      <Artista>
+        <Nombre>Radiohead</Nombre>
+        <Tipo>Banda</Tipo>
+      </Artista>
+      <Titulo>OK Computer</Titulo>
+    </Disco>
+    <Disco xsi:type="CD">
+      <Precio>300</Precio>
+      <Año>1965</Año>
+      <Genero>Rock</Genero>
+      <Artista>
+        <Nombre>The Beatles</Nombre>
+        <Tipo>Banda</Tipo>
+      </Artista>
+      <Titulo>Help</Titulo>
+    </Disco>
+    <Disco xsi:type="Vinilo">
+      <Precio>600</Precio>
+      <Año>2009</Año>
+      <Genero>Pop</Genero>
+      <Artista>
+        <Nombre>Animal Collective</Nombre>
+        <Tipo>Banda</Tipo>
+      </Artista>
+      <Titulo>Merryweather Post Pavilion</Titulo>
+      <Condicion>Nuevo</Condicion>
+    </Disco>
+    <Disco xsi:type="Vinilo">
+      <Precio>500</Precio>
+      <Año>1970</Año>
+      <Genero>Rock</Genero>
+      <Artista>
+        <Nombre>Sui Generis</Nombre>
+        <Tipo>Banda</Tipo>
+      </Artista>
+      <Titulo>Vida</Titulo>
+      <Condicion>Nuevo</Condicion>
+    </Disco>
+    <Disco xsi:type="Vinilo">
+      <Precio>800</Precio>
+      <Año>1970</Año>
+      <Genero>Jazz</Genero>
+      <Artista>
+        <Nombre>Miles Davis</Nombre>
+        <Tipo>Solista</Tipo>
+      </Artista>
+      <Titulo>In a silent way</Titulo>
+      <Condicion>Nuevo</Condicion>
+    </Disco>
+    <Disco xsi:type="CD">
+      <Precio>900</Precio>
+      <Año>1969</Año>
+      <Genero>Jazz</Genero>
+      <Artista>
+        <Nombre>John Coltrane</Nombre>
+        <Tipo>Solista</Tipo>
+      </Artista>
+      <Titulo>A love Supreme</Titulo>
+    </Disco>
+  </StockListado>
+  <VentasListado>
+    <Venta>
+      <DiscoVendido xsi:type="Vinilo">
+        <Precio>500</Precio>
+        <Año>1983</Año>
+        <Genero>Rock</Genero>
+        <Artista>
+          <Nombre>Charly Garcia</Nombre>
+          <Tipo>Solista</Tipo>
+        </Artista>
+        <Titulo>Clics modernos</Titulo>
+        <Condicion>Nuevo</Condicion>
+      </DiscoVendido>
+      <Cliente>
+        <Edad>22</Edad>
+        <Nombre>Juan Perez</Nombre>
+        <Sexo>Hombre</Sexo>
+      </Cliente>
+    </Venta>
+    <Venta>
+      <DiscoVendido xsi:type="CD">
+        <Precio>600</Precio>
+        <Año>2001</Año>
+        <Genero>Rock</Genero>
+        <Artista>
+          <Nombre>Babasonicos</Nombre>
+          <Tipo>Banda</Tipo>
+        </Artista>
+        <Titulo>Anoche</Titulo>
+      </DiscoVendido>
+      <Cliente>
+        <Edad>21</Edad>
+        <Nombre>ana</Nombre>
+        <Sexo>Hombre</Sexo>
+      </Cliente>
+    </Venta>
+    <Venta>
+      <DiscoVendido xsi:type="Vinilo">
+        <Precio>600</Precio>
+        <Año>1991</Año>
+        <Genero>Experimental</Genero>
+        <Artista>
+          <Nombre>mbv</Nombre>
+          <Tipo>Banda</Tipo>
+        </Artista>
+        <Titulo>Loveless</Titulo>
+        <Condicion>Nuevo</Condicion>
+      </DiscoVendido>
+      <Cliente>
+        <Edad>15</Edad>
+        <Nombre>Pedro</Nombre>
+        <Sexo>Hombre</Sexo>
+      </Cliente>
+    </Venta>
+    <Venta>
+      <DiscoVendido xsi:type="Vinilo">
+        <Precio>700</Precio>
+        <Año>1969</Año>
+        <Genero>Jazz</Genero>
+        <Artista>
+          <Nombre>spinnetta</Nombre>
+          <Tipo>Banda</Tipo>
+        </Artista>
+        <Titulo>el jardin</Titulo>
+        <Condicion>Nuevo</Condicion>
+      </DiscoVendido>
+      <Cliente>
+        <Edad>20</Edad>
+        <Nombre>Ana</Nombre>
+        <Sexo>Mujer</Sexo>
+      </Cliente>
+    </Venta>
+    <Venta>
+      <DiscoVendido xsi:type="Vinilo">
+        <Precio>800</Precio>
+        <Año>1991</Año>
+        <Genero>Rock</Genero>
+        <Artista>
+          <Nombre>Elliott Smith</Nombre>
+          <Tipo>Solista</Tipo>
+        </Artista>
+        <Titulo>Roman Candle</Titulo>
+        <Condicion>Usado</Condicion>
+      </DiscoVendido>
+      <Cliente>
+        <Edad>20</Edad>
+        <Nombre>Francisco</Nombre>
+        <Sexo>Hombre</Sexo>
+      </Cliente>
+    </Venta>
+    <Venta>
+      <DiscoVendido xsi:type="CD">
+        <Precio>900</Precio>
+        <Año>1971</Año>
+        <Genero>Pop</Genero>
+        <Artista>
+          <Nombre>Nick Drake</Nombre>
+          <Tipo>Solista</Tipo>
+        </Artista>
+        <Titulo>Pink Moon</Titulo>
+      </DiscoVendido>
+      <Cliente>
+        <Edad>19</Edad>
+        <Nombre>Alex</Nombre>
+        <Sexo>NoBinario</Sexo>
+      </Cliente>
+    </Venta>
+    <Venta>
+      <DiscoVendido xsi:type="Vinilo">
+        <Precio>550</Precio>
+        <Año>2001</Año>
+        <Genero>Experimental</Genero>
+        <Artista>
+          <Nombre>Fugazi</Nombre>
+          <Tipo>Banda</Tipo>
+        </Artista>
+        <Titulo>Argument</Titulo>
+        <Condicion>Nuevo</Condicion>
+      </DiscoVendido>
+      <Cliente>
+        <Edad>20</Edad>
+        <Nombre>Francisco</Nombre>
+        <Sexo>Hombre</Sexo>
+      </Cliente>
+    </Venta>
+  </VentasListado>
+  <Ganacia>4650</Ganacia>
+  <Cantidad>15</Cantidad>
+</TiendaOfDisco>
