@@ -1,0 +1,111 @@
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP3\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\bin\Debug\net5.0-windows\DisqueriaApp.exe
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP3\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\bin\Debug\net5.0-windows\DisqueriaApp.deps.json
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP3\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\bin\Debug\net5.0-windows\DisqueriaApp.runtimeconfig.json
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP3\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\bin\Debug\net5.0-windows\DisqueriaApp.runtimeconfig.dev.json
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP3\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\bin\Debug\net5.0-windows\DisqueriaApp.dll
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP3\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\bin\Debug\net5.0-windows\ref\DisqueriaApp.dll
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP3\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\bin\Debug\net5.0-windows\DisqueriaApp.pdb
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP3\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\obj\Debug\net5.0-windows\DisqueriaApp.csproj.AssemblyReference.cache
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP3\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\obj\Debug\net5.0-windows\DisqueriaApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP3\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\obj\Debug\net5.0-windows\DisqueriaApp.AssemblyInfoInputs.cache
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP3\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\obj\Debug\net5.0-windows\DisqueriaApp.AssemblyInfo.cs
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP3\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\obj\Debug\net5.0-windows\DisqueriaApp.csproj.CoreCompileInputs.cache
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP3\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\obj\Debug\net5.0-windows\DisqueriaApp.dll
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP3\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\obj\Debug\net5.0-windows\ref\DisqueriaApp.dll
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP3\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\obj\Debug\net5.0-windows\DisqueriaApp.pdb
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP3\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\obj\Debug\net5.0-windows\DisqueriaApp.genruntimeconfig.cache
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP3\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\bin\Debug\net5.0-windows\Entidades.dll
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP3\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\bin\Debug\net5.0-windows\Excepciones.dll
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP3\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\bin\Debug\net5.0-windows\Entidades.pdb
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP3\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\bin\Debug\net5.0-windows\Excepciones.pdb
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP3\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\obj\Debug\net5.0-windows\DisqueriaApp.FormDisqueria.resources
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP3\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\obj\Debug\net5.0-windows\DisqueriaApp.NuevaDisqueriaForm.resources
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP3\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\obj\Debug\net5.0-windows\DisqueriaApp.csproj.GenerateResource.cache
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP3\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\obj\Debug\net5.0-windows\DisqueriaApp.csproj.CopyComplete
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP3\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\obj\Debug\net5.0-windows\DisqueriaApp.FormPrincipal.resources
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP3\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\obj\Debug\net5.0-windows\DisqueriaApp.FormDisco.resources
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP3\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\obj\Debug\net5.0-windows\DisqueriaApp.FormVinilo.resources
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP3\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\obj\Debug\net5.0-windows\DisqueriaApp.Properties.Resources.resources
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP3\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\obj\Debug\net5.0-windows\DisqueriaApp.FormCD.resources
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP3\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\obj\Debug\net5.0-windows\DisqueriaApp.NuevaVentaForm.resources
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP3\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\bin\Debug\net5.0-windows\Archivos.dll
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP3\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\bin\Debug\net5.0-windows\Archivos.pdb
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP3\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\obj\Debug\net5.0-windows\DisqueriaApp.GuardarForm.resources
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP3\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\obj\Debug\net5.0-windows\DisqueriaApp.InformesForm.resources
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP3\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\obj\Debug\net5.0-windows\DisqueriaApp.CargarForm.resources
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP3\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\bin\Debug\net5.0-windows\System.Data.SqlClient.dll
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP3\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\bin\Debug\net5.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP3\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\bin\Debug\net5.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP3\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\bin\Debug\net5.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP3\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\bin\Debug\net5.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP3\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP4\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\obj\Debug\net5.0-windows\DisqueriaApp.csproj.AssemblyReference.cache
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP4\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\obj\Debug\net5.0-windows\DisqueriaApp.FormDisco.resources
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP4\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\obj\Debug\net5.0-windows\DisqueriaApp.FormDisqueria.resources
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP4\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\obj\Debug\net5.0-windows\DisqueriaApp.InformesForm.resources
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP4\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\obj\Debug\net5.0-windows\DisqueriaApp.NuevaVentaForm.resources
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP4\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\obj\Debug\net5.0-windows\DisqueriaApp.Properties.Resources.resources
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP4\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\obj\Debug\net5.0-windows\DisqueriaApp.csproj.GenerateResource.cache
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP4\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\obj\Debug\net5.0-windows\DisqueriaApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP4\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\obj\Debug\net5.0-windows\DisqueriaApp.AssemblyInfoInputs.cache
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP4\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\obj\Debug\net5.0-windows\DisqueriaApp.AssemblyInfo.cs
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP4\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\obj\Debug\net5.0-windows\DisqueriaApp.csproj.CoreCompileInputs.cache
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP4\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\obj\Debug\net5.0-windows\DisqueriaApp.dll
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP4\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\obj\Debug\net5.0-windows\ref\DisqueriaApp.dll
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP4\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\obj\Debug\net5.0-windows\DisqueriaApp.pdb
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP4\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\bin\Debug\net5.0-windows\DisqueriaApp.exe
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP4\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\bin\Debug\net5.0-windows\DisqueriaApp.deps.json
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP4\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\bin\Debug\net5.0-windows\DisqueriaApp.runtimeconfig.json
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP4\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\bin\Debug\net5.0-windows\DisqueriaApp.runtimeconfig.dev.json
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP4\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\bin\Debug\net5.0-windows\DisqueriaApp.dll
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP4\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\bin\Debug\net5.0-windows\ref\DisqueriaApp.dll
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP4\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\bin\Debug\net5.0-windows\DisqueriaApp.pdb
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP4\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\bin\Debug\net5.0-windows\System.Data.SqlClient.dll
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP4\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\bin\Debug\net5.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP4\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\bin\Debug\net5.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP4\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\bin\Debug\net5.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP4\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\bin\Debug\net5.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP4\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP4\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\bin\Debug\net5.0-windows\Archivos.dll
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP4\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\bin\Debug\net5.0-windows\Entidades.dll
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP4\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\bin\Debug\net5.0-windows\Excepciones.dll
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP4\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\bin\Debug\net5.0-windows\Entidades.pdb
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP4\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\bin\Debug\net5.0-windows\Archivos.pdb
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP4\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\bin\Debug\net5.0-windows\Excepciones.pdb
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP4\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\obj\Debug\net5.0-windows\DisqueriaApp.csproj.CopyComplete
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\TP4\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\obj\Debug\net5.0-windows\DisqueriaApp.genruntimeconfig.cache
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP4 - Recuperatorio\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\bin\Debug\net5.0-windows\DisqueriaApp.exe
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP4 - Recuperatorio\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\bin\Debug\net5.0-windows\DisqueriaApp.deps.json
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP4 - Recuperatorio\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\bin\Debug\net5.0-windows\DisqueriaApp.runtimeconfig.json
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP4 - Recuperatorio\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\bin\Debug\net5.0-windows\DisqueriaApp.runtimeconfig.dev.json
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP4 - Recuperatorio\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\bin\Debug\net5.0-windows\DisqueriaApp.dll
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP4 - Recuperatorio\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\bin\Debug\net5.0-windows\ref\DisqueriaApp.dll
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP4 - Recuperatorio\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\bin\Debug\net5.0-windows\DisqueriaApp.pdb
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP4 - Recuperatorio\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\bin\Debug\net5.0-windows\System.Data.SqlClient.dll
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP4 - Recuperatorio\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\bin\Debug\net5.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP4 - Recuperatorio\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\bin\Debug\net5.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP4 - Recuperatorio\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\bin\Debug\net5.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP4 - Recuperatorio\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\bin\Debug\net5.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP4 - Recuperatorio\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP4 - Recuperatorio\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\bin\Debug\net5.0-windows\Archivos.dll
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP4 - Recuperatorio\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\bin\Debug\net5.0-windows\Entidades.dll
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP4 - Recuperatorio\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\bin\Debug\net5.0-windows\Excepciones.dll
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP4 - Recuperatorio\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\bin\Debug\net5.0-windows\Entidades.pdb
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP4 - Recuperatorio\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\bin\Debug\net5.0-windows\Archivos.pdb
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP4 - Recuperatorio\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\bin\Debug\net5.0-windows\Excepciones.pdb
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP4 - Recuperatorio\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\obj\Debug\net5.0-windows\DisqueriaApp.csproj.AssemblyReference.cache
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP4 - Recuperatorio\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\obj\Debug\net5.0-windows\DisqueriaApp.FormDisco.resources
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP4 - Recuperatorio\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\obj\Debug\net5.0-windows\DisqueriaApp.FormDisqueria.resources
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP4 - Recuperatorio\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\obj\Debug\net5.0-windows\DisqueriaApp.InformesForm.resources
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP4 - Recuperatorio\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\obj\Debug\net5.0-windows\DisqueriaApp.NuevaVentaForm.resources
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP4 - Recuperatorio\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\obj\Debug\net5.0-windows\DisqueriaApp.Properties.Resources.resources
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP4 - Recuperatorio\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\obj\Debug\net5.0-windows\DisqueriaApp.csproj.GenerateResource.cache
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP4 - Recuperatorio\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\obj\Debug\net5.0-windows\DisqueriaApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP4 - Recuperatorio\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\obj\Debug\net5.0-windows\DisqueriaApp.AssemblyInfoInputs.cache
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP4 - Recuperatorio\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\obj\Debug\net5.0-windows\DisqueriaApp.AssemblyInfo.cs
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP4 - Recuperatorio\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\obj\Debug\net5.0-windows\DisqueriaApp.csproj.CoreCompileInputs.cache
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP4 - Recuperatorio\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\obj\Debug\net5.0-windows\DisqueriaApp.csproj.CopyComplete
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP4 - Recuperatorio\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\obj\Debug\net5.0-windows\DisqueriaApp.dll
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP4 - Recuperatorio\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\obj\Debug\net5.0-windows\ref\DisqueriaApp.dll
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP4 - Recuperatorio\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\obj\Debug\net5.0-windows\DisqueriaApp.pdb
+C:\Users\USUARIO\Desktop\tps_laboratorio_2\Recuperatorios\TP4 - Recuperatorio\Szellner.Francisco.2A.TPFINAL\DisqueriaApp\obj\Debug\net5.0-windows\DisqueriaApp.genruntimeconfig.cache

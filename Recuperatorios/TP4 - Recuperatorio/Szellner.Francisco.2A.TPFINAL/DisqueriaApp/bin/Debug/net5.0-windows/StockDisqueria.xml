@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfDisco xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Disco>
+    <Precio>950</Precio>
+    <TipoDIsco>CD</TipoDIsco>
+    <Año>2012</Año>
+    <Genero>Experimental</Genero>
+    <Artista>
+      <Nombre>Death Grips</Nombre>
+      <Tipo>Banda</Tipo>
+    </Artista>
+    <Titulo>The money store</Titulo>
+  </Disco>
+  <Disco>
+    <Precio>600</Precio>
+    <TipoDIsco>CD</TipoDIsco>
+    <Año>2012</Año>
+    <Genero>Rock</Genero>
+    <Artista>
+      <Nombre>Alex G</Nombre>
+      <Tipo>Solista</Tipo>
+    </Artista>
+    <Titulo>Trick</Titulo>
+  </Disco>
+  <Disco>
+    <Precio>1300</Precio>
+    <TipoDIsco>Vinilo</TipoDIsco>
+    <Año>1996</Año>
+    <Genero>Experimental</Genero>
+    <Artista>
+      <Nombre>DJ Shadow</Nombre>
+      <Tipo>Solista</Tipo>
+    </Artista>
+    <Titulo>Endtroducing...</Titulo>
+  </Disco>
+  <Disco>
+    <Precio>650</Precio>
+    <TipoDIsco>Vinilo</TipoDIsco>
+    <Año>1969</Año>
+    <Genero>Pop</Genero>
+    <Artista>
+      <Nombre>The Beach Boys</Nombre>
+      <Tipo>Banda</Tipo>
+    </Artista>
+    <Titulo>Pet Sounds</Titulo>
+  </Disco>
+  <Disco>
+    <Precio>850</Precio>
+    <TipoDIsco>CD</TipoDIsco>
+    <Año>2007</Año>
+    <Genero>Pop</Genero>
+    <Artista>
+      <Nombre>Britney Spears</Nombre>
+      <Tipo>Solista</Tipo>
+    </Artista>
+    <Titulo>Blackout</Titulo>
+  </Disco>
+  <Disco>
+    <Precio>950</Precio>
+    <TipoDIsco>CD</TipoDIsco>
+    <Año>2003</Año>
+    <Genero>Experimental</Genero>
+    <Artista>
+      <Nombre>Sweet trip</Nombre>
+      <Tipo>Banda</Tipo>
+    </Artista>
+    <Titulo>V : D : C</Titulo>
+  </Disco>
+  <Disco>
+    <Precio>1899</Precio>
+    <TipoDIsco>Vinilo</TipoDIsco>
+    <Año>1996</Año>
+    <Genero>Rock</Genero>
+    <Artista>
+      <Nombre>Fishmans</Nombre>
+      <Tipo>Banda</Tipo>
+    </Artista>
+    <Titulo>Long Season</Titulo>
+  </Disco>
+  <Disco>
+    <Precio>1200</Precio>
+    <TipoDIsco>Vinilo</TipoDIsco>
+    <Año>1969</Año>
+    <Genero>Jazz</Genero>
+    <Artista>
+      <Nombre>Frank Zappa</Nombre>
+      <Tipo>Solista</Tipo>
+    </Artista>
+    <Titulo>Hot Rats</Titulo>
+  </Disco>
+  <Disco>
+    <Precio>700</Precio>
+    <TipoDIsco>Vinilo</TipoDIsco>
+    <Año>1971</Año>
+    <Genero>Pop</Genero>
+    <Artista>
+      <Nombre>The Beach Boys</Nombre>
+      <Tipo>Banda</Tipo>
+    </Artista>
+    <Titulo>Surfs Up</Titulo>
+  </Disco>
+  <Disco>
+    <Precio>780</Precio>
+    <TipoDIsco>CD</TipoDIsco>
+    <Año>1996</Año>
+    <Genero>Rock</Genero>
+    <Artista>
+      <Nombre>Elliott Smith</Nombre>
+      <Tipo>Solista</Tipo>
+    </Artista>
+    <Titulo>Either/Or</Titulo>
+  </Disco>
+</ArrayOfDisco>
